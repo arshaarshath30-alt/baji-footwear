@@ -1,10 +1,9 @@
-import { useState } from "react";
+
 import { imgStoreMain, imgStoreBags, imgStoreShoeWall, imgGallery1 } from "../images";
 import { Label, Section, WACTABanner, FaqItem, ContactRow, InternalLinks, ParallaxImage, ParallaxBand, ScrollReveal, StaggerGrid } from "../ui";
 import { PinIcon, PhoneIcon, ClockIcon, WAIcon } from "../ui";
 
 export default function VisitUs() {
-  const [form, setForm] = useState({ name: "", phone: "", message: "" });
 
   return (
     <div>
@@ -17,11 +16,8 @@ export default function VisitUs() {
               <h1 className="font-['Playfair_Display',serif] font-bold text-[36px] sm:text-[48px] lg:text-[60px] leading-tight text-[#1a1a2e] mt-3">Plan Your Visit</h1>
               <p className="font-['Inter',sans-serif] text-[14px] sm:text-[17px] leading-[1.6] text-[#4a4a5c] mt-5 max-w-lg">Visit Baji Footwear in Sivagangai — open 7 days a week with 500+ products across footwear and bags. No appointment needed.</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#" className="bg-[#d10b78] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
-                  <WAIcon size={14} /> Get Directions on WhatsApp
-                </a>
-                <a href="tel:+919876543210" className="border-2 border-[#1a1a2e] text-[#1a1a2e] rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#1a1a2e] hover:text-white transition-colors">
-                  <PhoneIcon color="currentColor" /> Call Us
+                <a href="tel:+919876543210" className="bg-[#d10b78] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
+                  <PhoneIcon color="white" /> Call Us Now
                 </a>
               </div>
             </div>
@@ -75,19 +71,18 @@ export default function VisitUs() {
             </div>
           </div>
 
-          {/* Map placeholder */}
-          <ParallaxBand img={imgGallery1} bg="bg-[#e8e0d4]" className="w-full lg:flex-1 rounded-2xl h-64 sm:h-80 lg:h-[400px] flex items-center justify-center shrink-0" overlayOpacity={0.15}>
-            <div className="text-center px-6">
-              <div className="w-14 h-14 rounded-full bg-[#d10b78] flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <PinIcon color="white" size={20} />
-              </div>
-              <p className="font-['Playfair_Display',serif] font-bold text-[18px] sm:text-[20px] text-[#1a1a2e]">Baji Footwear</p>
-              <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#4a4a5c] mt-1">Sivagangai, Tamil Nadu</p>
-              <a href="#" className="mt-5 inline-flex items-center gap-2 bg-[#1a1a2e] text-white rounded-full px-5 py-2.5 font-['Inter',sans-serif] font-medium text-[13px] hover:bg-[#2d2f8e] transition-colors">
-                <PinIcon color="white" size={14} /> Open in Google Maps
-              </a>
-            </div>
-          </ParallaxBand>
+          {/* Fake Map Embed */}
+          <div className="w-full lg:flex-1 rounded-2xl h-64 sm:h-80 lg:h-[400px] overflow-hidden shrink-0 bg-[#e8e0d4]">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15729.809187310064!2d78.4727189!3d9.8543152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00ed43d3b664d9%3A0xc3b438b47120df0d!2sSivaganga%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen={false} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </Section>
 
@@ -109,10 +104,10 @@ export default function VisitUs() {
           ))}
         </div>
         <div className="mt-6 bg-[#1a1a2e] rounded-2xl p-5 sm:p-6 text-center">
-          <p className="font-['Playfair_Display',serif] font-semibold text-[16px] sm:text-[18px] text-white">{"Can't find us?"}</p>
-          <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#8a8aa8] mt-2">WhatsApp us and we'll send you our exact location pin.</p>
-          <a href="#" className="mt-4 inline-flex items-center gap-2 bg-[#25d366] text-white rounded-full px-6 py-2.5 font-['Inter',sans-serif] font-medium text-[13px] hover:bg-[#1da855] transition-colors">
-            <WAIcon size={14} /> Send Location on WhatsApp
+          <p className="font-['Playfair_Display',serif] font-semibold text-[16px] sm:text-[18px] text-white">Need help finding us?</p>
+          <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#8a8aa8] mt-2">Give us a call and we will guide you to our store.</p>
+          <a href="tel:+919876543210" className="mt-4 inline-flex items-center gap-2 bg-[#d10b78] text-white rounded-full px-6 py-2.5 font-['Inter',sans-serif] font-medium text-[13px] hover:bg-[#b50967] transition-colors">
+            <PhoneIcon color="white" /> Call for Directions
           </a>
         </div>
       </Section>
@@ -142,71 +137,7 @@ export default function VisitUs() {
         </div>
       </Section>
 
-      {/* ENQUIRY FORM */}
-      <Section bg="bg-[#f2ede4]">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
-          <div className="flex-1">
-            <Label light>Contact Form</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Send Us an Enquiry</h2>
-            <p className="font-['Inter',sans-serif] text-[14px] sm:text-[15px] text-[#4a4a5c] mt-3">Send us a message and we'll get back to you on WhatsApp within a few hours.</p>
-            <form className="mt-7 flex flex-col gap-4" onSubmit={e => e.preventDefault()}>
-              <div>
-                <label className="font-['Inter',sans-serif] font-semibold text-[12px] sm:text-[13px] text-[#4a4a5c] uppercase tracking-wide block mb-2">Your Name</label>
-                <input
-                  type="text"
-                  placeholder="e.g. Priya Lakshmi"
-                  className="w-full bg-white border border-[#e5ddd0] rounded-xl px-4 py-3 font-['Inter',sans-serif] text-[14px] text-[#1a1a2e] placeholder:text-[#b0a898] focus:outline-none focus:border-[#d10b78] transition-colors"
-                  value={form.name}
-                  onChange={e => setForm({...form, name: e.target.value})}
-                />
-              </div>
-              <div>
-                <label className="font-['Inter',sans-serif] font-semibold text-[12px] sm:text-[13px] text-[#4a4a5c] uppercase tracking-wide block mb-2">WhatsApp Number</label>
-                <input
-                  type="tel"
-                  placeholder="+91 98765 43210"
-                  className="w-full bg-white border border-[#e5ddd0] rounded-xl px-4 py-3 font-['Inter',sans-serif] text-[14px] text-[#1a1a2e] placeholder:text-[#b0a898] focus:outline-none focus:border-[#d10b78] transition-colors"
-                  value={form.phone}
-                  onChange={e => setForm({...form, phone: e.target.value})}
-                />
-              </div>
-              <div>
-                <label className="font-['Inter',sans-serif] font-semibold text-[12px] sm:text-[13px] text-[#4a4a5c] uppercase tracking-wide block mb-2">What Are You Looking For?</label>
-                <textarea
-                  rows={4}
-                  placeholder="e.g. School bags for 2 children (age 8 and 12), budget ₹500 each"
-                  className="w-full bg-white border border-[#e5ddd0] rounded-xl px-4 py-3 font-['Inter',sans-serif] text-[14px] text-[#1a1a2e] placeholder:text-[#b0a898] focus:outline-none focus:border-[#d10b78] transition-colors resize-none"
-                  value={form.message}
-                  onChange={e => setForm({...form, message: e.target.value})}
-                />
-              </div>
-              <button type="submit" className="bg-[#d10b78] text-white rounded-full px-7 py-3.5 font-['Inter',sans-serif] font-bold text-[14px] hover:bg-[#b50967] transition-colors inline-flex items-center justify-center gap-2">
-                <WAIcon size={15} /> Send via WhatsApp
-              </button>
-            </form>
-          </div>
-          <div className="w-full lg:w-[380px] shrink-0 bg-[#1a1a2e] rounded-2xl p-7 text-white">
-            <p className="font-['Playfair_Display',serif] font-bold text-[20px] sm:text-[22px]">Quick Contact</p>
-            <p className="font-['Inter',sans-serif] text-[13px] text-[#8a8aa8] mt-2">Prefer to reach us directly? Here are all our contact options.</p>
-            <div className="mt-6 flex flex-col gap-5">
-              {[
-                { icon: <PhoneIcon color="white" />, label: "Call Us", value: "+91 98765 43210" },
-                { icon: <WAIcon color="white" />, label: "WhatsApp", value: "+91 98765 43210" },
-                { icon: <PinIcon color="white" />, label: "Address", value: "Sivagangai, Tamil Nadu" },
-                { icon: <ClockIcon color="white" />, label: "Hours", value: "Mon–Sat 9am–9pm / Sun 10am–8pm" },
-              ].map(({ icon, label, value }) => (
-                <div key={label} className="flex items-start gap-3">
-                  <div className="shrink-0 mt-0.5">{icon}</div>
-                  <div>
-                    <p className="font-['Inter',sans-serif] font-semibold text-[11px] tracking-wide uppercase text-[#8a8aa8]">{label}</p>
-                    <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#c0c0d0] mt-0.5">{value}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Section>
+
 
       <WACTABanner heading="Looking for Something Specific?" body="Message us before visiting — we'll confirm availability and save you a trip." />
     </div>
