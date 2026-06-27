@@ -147,7 +147,7 @@ export function ParallaxImage({
 
 // ── ParallaxBand — full-width band whose bg drifts on scroll ──────────────────
 export function ParallaxBand({
-  img, children, bg = "bg-[#1a1a2e]", className = "", overlayOpacity = 0.55,
+  img, children, bg = "bg-[#1C1917]", className = "", overlayOpacity = 0.55,
 }: {
   img?: string; children?: React.ReactNode; bg?: string;
   className?: string; overlayOpacity?: number;
@@ -176,7 +176,7 @@ export function WAIcon({ size = 16, color = "white" }: { size?: number; color?: 
   );
 }
 
-export function PinIcon({ color = "#D10B78", size = 16 }: { color?: string; size?: number }) {
+export function PinIcon({ color = "#CA8A04", size = 16 }: { color?: string; size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 16 16" fill="none" className="shrink-0">
       <path d="M8 1.5C5.51 1.5 3.5 3.51 3.5 6C3.5 9 8 14.5 8 14.5C8 14.5 12.5 9 12.5 6C12.5 3.51 10.49 1.5 8 1.5Z" stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33333"/>
@@ -185,7 +185,7 @@ export function PinIcon({ color = "#D10B78", size = 16 }: { color?: string; size
   );
 }
 
-export function PhoneIcon({ color = "#D10B78" }: { color?: string }) {
+export function PhoneIcon({ color = "#CA8A04" }: { color?: string }) {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">
       <path d="M2.67 2.67C2.67 2.3 2.97 2 3.33 2H4.77C5.2 2 5.57 2.27 5.71 2.68L6.57 5.17C6.7 5.54 6.58 5.95 6.28 6.2L5.33 6.97C6.24 9.08 7.92 10.76 10.03 11.67L10.8 10.72C11.05 10.42 11.46 10.3 11.83 10.43L14.32 11.29C14.73 11.43 15 11.8 15 12.23V13.67C15 14.03 14.7 14.33 14.33 14.33H13.33C7.44 14.33 2.67 9.56 2.67 3.67V2.67Z" stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33333"/>
@@ -193,7 +193,7 @@ export function PhoneIcon({ color = "#D10B78" }: { color?: string }) {
   );
 }
 
-export function ClockIcon({ color = "#D10B78" }: { color?: string }) {
+export function ClockIcon({ color = "#CA8A04" }: { color?: string }) {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">
       <circle cx="8" cy="8" r="6.5" stroke={color} strokeWidth="1.33333"/>
@@ -202,7 +202,7 @@ export function ClockIcon({ color = "#D10B78" }: { color?: string }) {
   );
 }
 
-export function ArrowRight({ color = "#D10B78" }: { color?: string }) {
+export function ArrowRight({ color = "#CA8A04" }: { color?: string }) {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">
       <path d="M3.33 8H12.67" stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.33"/>
@@ -214,16 +214,16 @@ export function ArrowRight({ color = "#D10B78" }: { color?: string }) {
 export function StarIcon({ filled = true }: { filled?: boolean }) {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="shrink-0">
-      <path d="M7 1L8.85 5.04L13.28 5.66L10.14 8.72L10.91 13.12L7 10.9L3.09 13.12L3.86 8.72L0.72 5.66L5.15 5.04L7 1Z" fill={filled ? "#D10B78" : "none"} stroke="#D10B78" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.17"/>
+      <path d="M7 1L8.85 5.04L13.28 5.66L10.14 8.72L10.91 13.12L7 10.9L3.09 13.12L3.86 8.72L0.72 5.66L5.15 5.04L7 1Z" fill={filled ? "#CA8A04" : "none"} stroke="#CA8A04" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.17"/>
     </svg>
   );
 }
 
 export function CheckCircle() {
   return (
-    <div className="w-8 h-8 rounded-full bg-[rgba(209,11,120,0.1)] flex items-center justify-center shrink-0">
+    <div className="w-8 h-8 rounded-full bg-[rgba(202,138,4,0.1)] flex items-center justify-center shrink-0">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M4 8L6.5 10.5L12 5" stroke="#D10B78" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 8L6.5 10.5L12 5" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     </div>
   );
@@ -245,7 +245,7 @@ export function GoogleIcon() {
 export function Label({ children, center = false, light = false }: { children: string; center?: boolean; light?: boolean }) {
   return (
     <motion.p
-      className={`font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] leading-[16px] tracking-[2.4px] uppercase ${light ? "text-[#2d2f8e]" : "text-[#d10b78]"} ${center ? "text-center" : ""}`}
+      className={`font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] leading-[16px] tracking-[2.4px] uppercase ${light ? "text-[#2d2f8e]" : "text-[#CA8A04]"} ${center ? "text-center" : ""}`}
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -269,7 +269,7 @@ export function Section({ bg = "bg-white", children, className = "" }: { bg?: st
 // ── Page hero ─────────────────────────────────────────────────────────────────
 
 export function PageHero({
-  label, heading, subheading, bg = "bg-[#faf7f2]", headingColor = "text-[#e40a7a]", img,
+  label, heading, subheading, bg = "bg-[#FAFAF9]", headingColor = "text-[#e40a7a]", img,
   cta, ctaSecondary,
 }: {
   label?: string; heading: string; subheading?: string; bg?: string;
@@ -284,14 +284,14 @@ export function PageHero({
           <div className="flex-1">
             {label && (
               <motion.p
-                className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] leading-[16px] tracking-[2.4px] uppercase text-[#d10b78]"
+                className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] leading-[16px] tracking-[2.4px] uppercase text-[#CA8A04]"
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease }}
               >
                 {label}
               </motion.p>
             )}
             <motion.h1
-              className={`font-['Playfair_Display',serif] font-bold ${headingColor} mt-3 text-[36px] sm:text-[48px] lg:text-[64px] leading-[1.05] tracking-tight`}
+              className={`font-['Rubik',sans-serif] font-bold ${headingColor} mt-3 text-[36px] sm:text-[48px] lg:text-[64px] leading-[1.05] tracking-tight`}
               initial={{ opacity: 0, y: 28 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease, delay: 0.1 }}
@@ -300,7 +300,7 @@ export function PageHero({
             </motion.h1>
             {subheading && (
               <motion.p
-                className="font-['Inter',sans-serif] font-normal text-[15px] sm:text-[17px] leading-[1.6] text-[#4a4a5c] mt-5 max-w-xl"
+                className="font-['Nunito_Sans',sans-serif] font-normal text-[15px] sm:text-[17px] leading-[1.6] text-[#44403C] mt-5 max-w-xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease, delay: 0.25 }}
@@ -316,12 +316,12 @@ export function PageHero({
                 transition={{ duration: 0.5, ease, delay: 0.4 }}
               >
                 {cta && (
-                  <a href={cta.href ?? "#"} className="bg-[#d10b78] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
+                  <a href={cta.href ?? "#"} className="bg-[#CA8A04] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
                     <WAIcon size={14} /> {cta.label}
                   </a>
                 )}
                 {ctaSecondary && (
-                  <a href={ctaSecondary.href ?? "#"} className="border-2 border-[#1a1a2e] text-[#1a1a2e] rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#1a1a2e] hover:text-white transition-colors">
+                  <a href={ctaSecondary.href ?? "#"} className="border-2 border-[#1C1917] text-[#1C1917] rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#1C1917] hover:text-white transition-colors">
                     {ctaSecondary.label}
                   </a>
                 )}
@@ -348,14 +348,14 @@ export function PageHero({
 
 export function WACTABanner({ heading = "WhatsApp Us Before Visiting", body, img }: { heading?: string; body?: string; img?: string }) {
   return (
-    <ParallaxBand bg="bg-[#1a1a2e]" img={img} className="py-14 sm:py-16" overlayOpacity={img ? 0.7 : 0}>
+    <ParallaxBand bg="bg-[#1C1917]" img={img} className="py-14 sm:py-16" overlayOpacity={img ? 0.7 : 0}>
       <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
         <ScrollReveal>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[34px] lg:text-[40px] leading-tight text-white">{heading}</h2>
-          {body && <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] text-[#8a8aa8] mt-3 max-w-md mx-auto">{body}</p>}
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[34px] lg:text-[40px] leading-tight text-white">{heading}</h2>
+          {body && <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#a8a29e] mt-3 max-w-md mx-auto">{body}</p>}
           <motion.a
             href="#"
-            className="mt-7 bg-[#25d366] text-white rounded-full px-7 py-3.5 inline-flex items-center gap-3 font-['Inter',sans-serif] font-bold text-[15px] hover:bg-[#1da855] transition-colors"
+            className="mt-7 bg-[#25d366] text-white rounded-full px-7 py-3.5 inline-flex items-center gap-3 font-['Nunito_Sans',sans-serif] font-bold text-[15px] hover:bg-[#1da855] transition-colors"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
@@ -381,8 +381,8 @@ export function PricingCard({ img, label, price }: { img: string; label: string;
         <img alt={label} className="absolute inset-0 w-full h-full object-cover" src={img} />
       </div>
       <div className="p-3">
-        <p className="font-['Inter',sans-serif] font-medium text-[11px] sm:text-[12px] leading-tight text-white">{label}</p>
-        <p className="font-['Inter',sans-serif] font-bold text-base sm:text-[17.6px] text-[#d10b78] mt-1">{price}</p>
+        <p className="font-['Nunito_Sans',sans-serif] font-medium text-[11px] sm:text-[12px] leading-tight text-white">{label}</p>
+        <p className="font-['Nunito_Sans',sans-serif] font-bold text-base sm:text-[17.6px] text-[#CA8A04] mt-1">{price}</p>
       </div>
     </motion.div>
   );
@@ -393,7 +393,7 @@ export function PricingCard({ img, label, price }: { img: string; label: string;
 export function CollectionCard({ img, title, subtitle, price, items }: { img: string; title: string; subtitle: string; price: string; items: [string,string,string,string] }) {
   return (
     <motion.div
-      className="bg-[#f2ede4] rounded-2xl overflow-hidden flex flex-col h-full"
+      className="bg-[#FAFAF9] rounded-2xl overflow-hidden flex flex-col h-full"
       variants={fadeUp}
       whileHover={{ y: -6, boxShadow: "0 16px 40px rgba(26,26,46,0.12)", transition: { duration: 0.25 } }}
     >
@@ -405,21 +405,21 @@ export function CollectionCard({ img, title, subtitle, price, items }: { img: st
           whileHover={{ scale: 1.06 }}
           transition={{ duration: 0.5 }}
         />
-        <span className="absolute top-3 right-3 bg-[#d10b78] text-white font-['Inter',sans-serif] font-bold text-[11px] px-2.5 py-1 rounded-full">From {price}</span>
+        <span className="absolute top-3 right-3 bg-[#CA8A04] text-white font-['Nunito_Sans',sans-serif] font-bold text-[11px] px-2.5 py-1 rounded-full">From {price}</span>
       </div>
       <div className="p-5 sm:p-6 flex flex-col gap-2 flex-1">
-        <p className="font-['Playfair_Display',serif] font-bold text-[17px] sm:text-[19.2px] leading-snug text-[#1a1a2e]">{title}</p>
-        <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#4a4a5c]">{subtitle}</p>
+        <p className="font-['Rubik',sans-serif] font-bold text-[17px] sm:text-[19.2px] leading-snug text-[#1C1917]">{title}</p>
+        <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#44403C]">{subtitle}</p>
         <div className="grid grid-cols-2 gap-x-3 gap-y-1 mt-2">
           {items.map((item, i) => (
             <div key={i} className="flex items-center gap-1.5">
-              <div className="w-1 h-1 rounded-full bg-[#d10b78] shrink-0" />
-              <span className="font-['Inter',sans-serif] text-[11px] sm:text-[12px] text-[#4a4a5c]">{item}</span>
+              <div className="w-1 h-1 rounded-full bg-[#CA8A04] shrink-0" />
+              <span className="font-['Nunito_Sans',sans-serif] text-[11px] sm:text-[12px] text-[#44403C]">{item}</span>
             </div>
           ))}
         </div>
         <button className="flex items-center gap-1 mt-3 text-left">
-          <span className="font-['Inter',sans-serif] font-semibold text-[13px] sm:text-[14px] text-[#d10b78]">Ask About Availability </span>
+          <span className="font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] text-[#CA8A04]">Ask About Availability </span>
           <ArrowRight />
         </button>
       </div>
@@ -432,13 +432,13 @@ export function CollectionCard({ img, title, subtitle, price, items }: { img: st
 export function FeatureCard({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
   return (
     <motion.div
-      className="bg-white rounded-2xl p-5 shadow-sm flex flex-col"
+      className="bg-white rounded-2xl p-5 shadow-lg shadow-black/5 flex flex-col"
       variants={fadeUp}
       whileHover={{ y: -4, boxShadow: "0 12px 32px rgba(26,26,46,0.1)", transition: { duration: 0.2 } }}
     >
-      <div className="w-9 h-9 rounded-full bg-[rgba(209,11,120,0.1)] flex items-center justify-center shrink-0">{icon}</div>
-      <p className="font-['Playfair_Display',serif] font-bold text-[14px] sm:text-[15.2px] leading-snug text-[#1a1a2e] mt-3">{title}</p>
-      <p className="font-['Inter',sans-serif] text-[11px] sm:text-[12px] leading-[19.5px] text-[#4a4a5c] mt-1.5">{desc}</p>
+      <div className="w-9 h-9 rounded-full bg-[rgba(202,138,4,0.1)] flex items-center justify-center shrink-0">{icon}</div>
+      <p className="font-['Rubik',sans-serif] font-bold text-[14px] sm:text-[15.2px] leading-snug text-[#1C1917] mt-3">{title}</p>
+      <p className="font-['Nunito_Sans',sans-serif] text-[11px] sm:text-[12px] leading-[19.5px] text-[#44403C] mt-1.5">{desc}</p>
     </motion.div>
   );
 }
@@ -460,7 +460,7 @@ export function StorePhoto({ img, label }: { img: string; label: string }) {
         style={{ y, scale: 1.22 }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,46,0.65)] to-transparent" />
-      <p className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] text-white">{label}</p>
+      <p className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] text-white">{label}</p>
     </motion.div>
   );
 }
@@ -470,24 +470,24 @@ export function StorePhoto({ img, label }: { img: string; label: string }) {
 export function ReviewCard({ initials, bg, name, time, text, stars }: { initials: string; bg: string; name: string; time: string; text: string; stars: number }) {
   return (
     <motion.div
-      className="bg-white rounded-2xl p-5 sm:p-6 shadow-sm flex flex-col"
+      className="bg-white rounded-2xl p-5 sm:p-6 shadow-lg shadow-black/5 flex flex-col"
       variants={fadeUp}
       whileHover={{ y: -4, boxShadow: "0 12px 32px rgba(26,26,46,0.1)", transition: { duration: 0.2 } }}
     >
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
           <div className={`${bg} w-10 h-10 rounded-full flex items-center justify-center shrink-0`}>
-            <span className="font-['Inter',sans-serif] font-bold text-[13px] text-white">{initials}</span>
+            <span className="font-['Nunito_Sans',sans-serif] font-bold text-[13px] text-white">{initials}</span>
           </div>
           <div>
-            <p className="font-['Inter',sans-serif] font-semibold text-[13px] sm:text-[14px] text-[#1a1a2e]">{name}</p>
-            <p className="font-['Inter',sans-serif] text-[11px] sm:text-[12px] text-[#8a8a9a]">{time}</p>
+            <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] text-[#1C1917]">{name}</p>
+            <p className="font-['Nunito_Sans',sans-serif] text-[11px] sm:text-[12px] text-[#a8a29e]">{time}</p>
           </div>
         </div>
         <GoogleIcon />
       </div>
       <div className="flex gap-0.5 mt-4">{Array.from({length:5}).map((_,i)=><StarIcon key={i} filled={i<stars}/>)}</div>
-      <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22.75px] text-[#4a4a5c] mt-3">{text}</p>
+      <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22.75px] text-[#44403C] mt-3">{text}</p>
     </motion.div>
   );
 }
@@ -498,14 +498,14 @@ export function FaqItem({ question, answer }: { question: string; answer: string
   const [open, setOpen] = useState(false);
   return (
     <motion.div
-      className="border border-[#e5ddd0] rounded-[14px] overflow-hidden"
+      className="border border-[#e5e5e0] rounded-[14px] overflow-hidden"
       variants={fadeUp}
       whileInView="visible"
       initial="hidden"
       viewport={{ once: true }}
     >
       <button className="w-full flex items-center justify-between px-5 py-4 gap-4 text-left" onClick={() => setOpen(!open)}>
-        <span className="font-['Inter',sans-serif] font-medium text-[14px] sm:text-[16px] leading-snug text-[#1a1a2e]">{question}</span>
+        <span className="font-['Nunito_Sans',sans-serif] font-medium text-[14px] sm:text-[16px] leading-snug text-[#1C1917]">{question}</span>
         <motion.svg
           width="16" height="16" viewBox="0 0 16 16" fill="none"
           className="shrink-0"
@@ -522,7 +522,7 @@ export function FaqItem({ question, answer }: { question: string; answer: string
         style={{ overflow: "hidden" }}
       >
         <div className="px-5 pb-5">
-          <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#4a4a5c]">{answer}</p>
+          <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#44403C]">{answer}</p>
         </div>
       </motion.div>
     </motion.div>
@@ -534,7 +534,7 @@ export function FaqItem({ question, answer }: { question: string; answer: string
 export function PriceRow({ img, label, start, avg, premium, note }: { img: string; label: string; start: string; avg: string; premium: string; note?: string }) {
   return (
     <motion.div
-      className="flex flex-col sm:flex-row sm:items-center gap-0 bg-white rounded-2xl shadow-sm overflow-hidden"
+      className="flex flex-col sm:flex-row sm:items-center gap-0 bg-white rounded-2xl shadow-lg shadow-black/5 overflow-hidden"
       variants={slideLeft}
       initial="hidden"
       whileInView="visible"
@@ -545,14 +545,14 @@ export function PriceRow({ img, label, start, avg, premium, note }: { img: strin
         <img alt={label} className="w-full h-full object-cover" src={img} />
       </div>
       <div className="flex-1 min-w-0 px-5 py-4 sm:py-0">
-        <p className="font-['Playfair_Display',serif] font-bold text-[16px] sm:text-[18px] text-[#1a1a2e]">{label}</p>
-        {note && <p className="font-['Inter',sans-serif] text-[11px] sm:text-[12px] text-[#8a8a9a] mt-0.5">{note}</p>}
+        <p className="font-['Rubik',sans-serif] font-bold text-[16px] sm:text-[18px] text-[#1C1917]">{label}</p>
+        {note && <p className="font-['Nunito_Sans',sans-serif] text-[11px] sm:text-[12px] text-[#a8a29e] mt-0.5">{note}</p>}
       </div>
-      <div className="grid grid-cols-3 divide-x divide-[#f2ede4] shrink-0 sm:w-72 border-t sm:border-t-0 sm:border-l border-[#f2ede4]">
-        {[["Starting", start, "text-[#2d2f8e]"], ["Average", avg, "text-[#1a1a2e]"], ["Premium", premium, "text-[#d10b78]"]].map(([lbl, val, color]) => (
+      <div className="grid grid-cols-3 divide-x divide-[#FAFAF9] shrink-0 sm:w-72 border-t sm:border-t-0 sm:border-l border-[#FAFAF9]">
+        {[["Starting", start, "text-[#2d2f8e]"], ["Average", avg, "text-[#1C1917]"], ["Premium", premium, "text-[#CA8A04]"]].map(([lbl, val, color]) => (
           <div key={lbl as string} className="text-center py-3 sm:py-5 px-2 sm:px-4">
-            <p className={`font-['Playfair_Display',serif] font-black text-[16px] sm:text-[20px] ${color}`}>{val}</p>
-            <p className="font-['Inter',sans-serif] text-[9px] sm:text-[10px] text-[#8a8a9a] uppercase tracking-wide mt-0.5">{lbl}</p>
+            <p className={`font-['Rubik',sans-serif] font-black text-[16px] sm:text-[20px] ${color}`}>{val}</p>
+            <p className="font-['Nunito_Sans',sans-serif] text-[9px] sm:text-[10px] text-[#a8a29e] uppercase tracking-wide mt-0.5">{lbl}</p>
           </div>
         ))}
       </div>
@@ -565,10 +565,10 @@ export function PriceRow({ img, label, start, avg, premium, note }: { img: strin
 export function ContactRow({ icon, label, value }: { icon: React.ReactNode; label: string; value: React.ReactNode }) {
   return (
     <div className="flex items-start gap-4">
-      <div className="w-10 h-10 rounded-full bg-[rgba(209,11,120,0.1)] flex items-center justify-center shrink-0">{icon}</div>
+      <div className="w-10 h-10 rounded-full bg-[rgba(202,138,4,0.1)] flex items-center justify-center shrink-0">{icon}</div>
       <div>
-        <p className="font-['Inter',sans-serif] font-semibold text-[11px] leading-[16px] tracking-[0.6px] uppercase text-[#8a8a9a]">{label}</p>
-        <div className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#4a4a5c] mt-1">{value}</div>
+        <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] leading-[16px] tracking-[0.6px] uppercase text-[#a8a29e]">{label}</p>
+        <div className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#44403C] mt-1">{value}</div>
       </div>
     </div>
   );
@@ -578,11 +578,11 @@ export function ContactRow({ icon, label, value }: { icon: React.ReactNode; labe
 
 export function InternalLinks({ links }: { links: { label: string; href: string }[] }) {
   return (
-    <div className="bg-[#f2ede4] py-4">
+    <div className="bg-[#FAFAF9] py-4">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 flex flex-wrap gap-x-6 gap-y-2 items-center">
-        <span className="font-['Inter',sans-serif] text-[11px] sm:text-[12px] font-semibold uppercase tracking-wider text-[#8a8a9a]">Also explore:</span>
+        <span className="font-['Nunito_Sans',sans-serif] text-[11px] sm:text-[12px] font-semibold uppercase tracking-wider text-[#a8a29e]">Also explore:</span>
         {links.map(l => (
-          <a key={l.href} href={l.href} className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#d10b78] font-medium hover:underline">{l.label}</a>
+          <a key={l.href} href={l.href} className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#CA8A04] font-medium hover:underline">{l.label}</a>
         ))}
       </div>
     </div>

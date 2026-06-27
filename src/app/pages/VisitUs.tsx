@@ -8,15 +8,15 @@ export default function VisitUs() {
   return (
     <div>
       {/* HERO */}
-      <section className="bg-[#faf7f2] w-full py-16 sm:py-20 lg:py-24">
+      <section className="bg-[#FAFAF9] w-full py-16 sm:py-20 lg:py-24">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
             <div className="flex-1">
-              <p className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#d10b78]">Visit Us</p>
-              <h1 className="font-['Playfair_Display',serif] font-bold text-[36px] sm:text-[48px] lg:text-[60px] leading-tight text-[#1a1a2e] mt-3">Plan Your Visit</h1>
-              <p className="font-['Inter',sans-serif] text-[14px] sm:text-[17px] leading-[1.6] text-[#4a4a5c] mt-5 max-w-lg">Visit Baji Footwear in Sivagangai — open 7 days a week with 500+ products across footwear and bags. No appointment needed.</p>
+              <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#CA8A04]">Visit Us</p>
+              <h1 className="font-['Rubik',sans-serif] font-bold text-[36px] sm:text-[48px] lg:text-[60px] leading-tight text-[#1C1917] mt-3">Plan Your Visit</h1>
+              <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[17px] leading-[1.6] text-[#44403C] mt-5 max-w-lg">Visit Baji Footwear in Sivagangai — open 7 days a week with 500+ products across footwear and bags. No appointment needed.</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="tel:+919876543210" className="bg-[#d10b78] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
+                <a href="tel:+919876543210" className="bg-[#CA8A04] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
                   <PhoneIcon color="white" /> Call Us Now
                 </a>
               </div>
@@ -40,7 +40,7 @@ export default function VisitUs() {
       {/* STORE INFORMATION */}
       <Section bg="bg-white">
         <Label light>Store Information</Label>
-        <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1a1a2e] mt-3">Everything You Need to Know</h2>
+        <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1C1917] mt-3">Everything You Need to Know</h2>
         <div className="mt-10 flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
           <div className="flex-1 flex flex-col gap-6">
             <ContactRow
@@ -51,21 +51,21 @@ export default function VisitUs() {
             <ContactRow
               icon={<PhoneIcon />}
               label="Phone"
-              value={<a href="tel:+919876543210" className="hover:text-[#d10b78] transition-colors">+91 98765 43210</a>}
+              value={<a href="tel:+919876543210" className="hover:text-[#CA8A04] transition-colors">+91 98765 43210</a>}
             />
             <ContactRow
-              icon={<WAIcon color="#D10B78" />}
+              icon={<WAIcon color="#CA8A04" />}
               label="WhatsApp"
-              value={<a href="#" className="hover:text-[#d10b78] transition-colors">+91 98765 43210 — Click to chat</a>}
+              value={<a href="#" className="hover:text-[#CA8A04] transition-colors">+91 98765 43210 — Click to chat</a>}
             />
             <ContactRow
               icon={<ClockIcon />}
               label="Store Hours"
-              value={<><p>Monday – Saturday: 9:00 AM – 9:00 PM</p><p>Sunday: 10:00 AM – 8:00 PM</p><p className="text-[#d10b78] mt-1">Open on public holidays</p></>}
+              value={<><p>Monday – Saturday: 9:00 AM – 9:00 PM</p><p>Sunday: 10:00 AM – 8:00 PM</p><p className="text-[#CA8A04] mt-1">Open on public holidays</p></>}
             />
-            <div className="bg-[#f2ede4] rounded-[14px] p-4 mt-2">
-              <p className="font-['Inter',sans-serif] text-[12px] sm:text-[13px] text-[#4a4a5c]">
-                <span className="font-semibold text-[#1a1a2e]">Parking: </span>
+            <div className="bg-[#FAFAF9] rounded-[14px] p-4 mt-2">
+              <p className="font-['Nunito_Sans',sans-serif] text-[12px] sm:text-[13px] text-[#44403C]">
+                <span className="font-semibold text-[#1C1917]">Parking: </span>
                 Street parking is available on the roads near the store. WhatsApp us for detailed directions and landmark information.
               </p>
             </div>
@@ -87,26 +87,26 @@ export default function VisitUs() {
       </Section>
 
       {/* HOW TO REACH US */}
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <Label light>How To Reach Us</Label>
-        <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Getting to Baji Footwear</h2>
+        <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-3">Getting to Baji Footwear</h2>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
           {[
             { icon: "🗺️", title: "Landmarks", desc: "We are located in central Sivagangai near the main commercial area. Ask locals for Baji Footwear — we're well known in the area." },
             { icon: "🚗", title: "By Car", desc: "Street parking is available near the store. Approach from the main road and look for our signboard. WhatsApp us for turn-by-turn directions." },
             { icon: "🚌", title: "By Bus / Auto", desc: "Sivagangai is well connected by bus from surrounding towns. From the main bus stand, take an auto or walk to the central commercial area." },
           ].map(({ icon, title, desc }) => (
-            <div key={title} className="bg-white rounded-2xl p-6 shadow-sm">
+            <div key={title} className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl shadow-lg shadow-black/5 p-6 shadow-lg shadow-black/5">
               <div className="text-3xl mb-4">{icon}</div>
-              <p className="font-['Playfair_Display',serif] font-bold text-[16px] sm:text-[18px] text-[#1a1a2e]">{title}</p>
-              <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#4a4a5c] mt-2">{desc}</p>
+              <p className="font-['Rubik',sans-serif] font-bold text-[16px] sm:text-[18px] text-[#1C1917]">{title}</p>
+              <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#44403C] mt-2">{desc}</p>
             </div>
           ))}
         </div>
-        <div className="mt-6 bg-[#1a1a2e] rounded-2xl p-5 sm:p-6 text-center">
-          <p className="font-['Playfair_Display',serif] font-semibold text-[16px] sm:text-[18px] text-white">Need help finding us?</p>
-          <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#8a8aa8] mt-2">Give us a call and we will guide you to our store.</p>
-          <a href="tel:+919876543210" className="mt-4 inline-flex items-center gap-2 bg-[#d10b78] text-white rounded-full px-6 py-2.5 font-['Inter',sans-serif] font-medium text-[13px] hover:bg-[#b50967] transition-colors">
+        <div className="mt-6 bg-[#1C1917] rounded-2xl p-5 sm:p-6 text-center">
+          <p className="font-['Rubik',sans-serif] font-semibold text-[16px] sm:text-[18px] text-white">Need help finding us?</p>
+          <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#a8a29e] mt-2">Give us a call and we will guide you to our store.</p>
+          <a href="tel:+919876543210" className="mt-4 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-6 py-2.5 font-['Nunito_Sans',sans-serif] font-medium text-[13px] hover:bg-[#b50967] transition-colors">
             <PhoneIcon color="white" /> Call for Directions
           </a>
         </div>
@@ -116,7 +116,7 @@ export default function VisitUs() {
       <ParallaxBand img={imgStoreMain} className="py-12 sm:py-14" overlayOpacity={0.76}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
           <ScrollReveal>
-            <p className="font-['Playfair_Display',serif] font-bold text-[22px] sm:text-[28px] text-white">Before You Visit</p>
+            <p className="font-['Rubik',sans-serif] font-bold text-[22px] sm:text-[28px] text-white">Before You Visit</p>
           </ScrollReveal>
         </div>
       </ParallaxBand>
@@ -125,7 +125,7 @@ export default function VisitUs() {
       <Section bg="bg-white">
         <div className="text-center mb-10">
           <Label center light>Frequently Asked Questions</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[32px] lg:text-[38px] leading-tight text-[#1a1a2e] mt-3">Before You Visit</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[32px] lg:text-[38px] leading-tight text-[#1C1917] mt-3">Before You Visit</h2>
         </div>
         <div className="max-w-[700px] mx-auto flex flex-col gap-2">
           <FaqItem question="What are your store timings?" answer="Monday to Saturday: 9:00 AM – 9:00 PM. Sunday: 10:00 AM – 8:00 PM. We are open all 7 days including most public holidays." />

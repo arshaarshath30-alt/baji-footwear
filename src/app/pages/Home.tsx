@@ -94,8 +94,8 @@ function HeroSlider({ sliderY }: { sliderY: ReturnType<typeof useMotionValue<num
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, ease, delay: 0.2 }}
             >
-              <p className="font-['Inter',sans-serif] font-semibold text-[10px] sm:text-[11px] tracking-[2.5px] uppercase text-[#E6007E]">{SLIDES[current].sub}</p>
-              <p className="font-['Playfair_Display',serif] font-bold text-[18px] sm:text-[22px] text-white mt-0.5 leading-tight">{SLIDES[current].label}</p>
+              <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[10px] sm:text-[11px] tracking-[2.5px] uppercase text-[#E6007E]">{SLIDES[current].sub}</p>
+              <p className="font-['Rubik',sans-serif] font-bold text-[18px] sm:text-[22px] text-white mt-0.5 leading-tight">{SLIDES[current].label}</p>
             </motion.div>
           </motion.div>
         </AnimatePresence>
@@ -115,9 +115,9 @@ function HeroSlider({ sliderY }: { sliderY: ReturnType<typeof useMotionValue<num
 
         {/* Slide counter top-right */}
         <div className="absolute top-4 right-4 bg-black/30 backdrop-blur-sm rounded-full px-3 py-1">
-          <span className="font-['Inter',sans-serif] text-[11px] font-semibold text-white/80">{String(current + 1).padStart(2,"0")}</span>
-          <span className="font-['Inter',sans-serif] text-[11px] text-white/40 mx-1">/</span>
-          <span className="font-['Inter',sans-serif] text-[11px] text-white/40">{String(SLIDES.length).padStart(2,"0")}</span>
+          <span className="font-['Nunito_Sans',sans-serif] text-[11px] font-semibold text-white/80">{String(current + 1).padStart(2,"0")}</span>
+          <span className="font-['Nunito_Sans',sans-serif] text-[11px] text-white/40 mx-1">/</span>
+          <span className="font-['Nunito_Sans',sans-serif] text-[11px] text-white/40">{String(SLIDES.length).padStart(2,"0")}</span>
         </div>
       </div>
 
@@ -127,7 +127,7 @@ function HeroSlider({ sliderY }: { sliderY: ReturnType<typeof useMotionValue<num
           <button
             key={i}
             onClick={() => { setCurrent(i); setPaused(false); }}
-            className={`rounded-full transition-all duration-300 ${i === current ? "w-6 h-2 bg-[#E6007E]" : "w-2 h-2 bg-[#1a1a2e]/25 hover:bg-[#2D5BFF]/50"}`}
+            className={`rounded-full transition-all duration-300 ${i === current ? "w-6 h-2 bg-[#E6007E]" : "w-2 h-2 bg-[#1C1917]/25 hover:bg-[#2D5BFF]/50"}`}
           />
         ))}
       </div>
@@ -167,7 +167,7 @@ function BrandStorySection() {
         transition={{ duration: 0.9, ease }}
       >
         <motion.p
-          className="font-['Inter',sans-serif] font-semibold text-[10px] sm:text-[12px] tracking-[3px] uppercase text-[#2d2f8e]"
+          className="font-['Nunito_Sans',sans-serif] font-semibold text-[10px] sm:text-[12px] tracking-[3px] uppercase text-[#2d2f8e]"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -176,7 +176,7 @@ function BrandStorySection() {
           Our Vision
         </motion.p>
         <motion.h2
-          className="font-['Playfair_Display',serif] font-bold text-[28px] sm:text-[44px] lg:text-[64px] leading-[1.1] tracking-tight text-[#1a1a2e] mt-4 sm:mt-5"
+          className="font-['Rubik',sans-serif] font-bold text-[28px] sm:text-[44px] lg:text-[64px] leading-[1.1] tracking-tight text-[#1C1917] mt-4 sm:mt-5"
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -185,7 +185,7 @@ function BrandStorySection() {
           Sivagangai's Most Trusted Footwear Destination
         </motion.h2>
         <motion.p
-          className="font-['Inter',sans-serif] font-normal text-[14px] sm:text-[18px] leading-[1.7] sm:leading-[1.75] text-[#4a4a5c] mt-5 sm:mt-6 max-w-[580px] mx-auto"
+          className="font-['Nunito_Sans',sans-serif] font-normal text-[14px] sm:text-[18px] leading-[1.7] sm:leading-[1.75] text-[#44403C] mt-5 sm:mt-6 max-w-[580px] mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -235,8 +235,8 @@ function BrandStorySection() {
           ["₹149", "Prices starting from"],
         ].map(([val, label]) => (
           <div key={label} className="text-center">
-            <p className="font-['Playfair_Display',serif] font-black text-[24px] sm:text-[40px] leading-none text-[#d10b78]">{val}</p>
-            <p className="font-['Inter',sans-serif] text-[10px] sm:text-[13px] text-[#8a8a9a] mt-1.5 uppercase tracking-wider">{label}</p>
+            <p className="font-['Rubik',sans-serif] font-black text-[24px] sm:text-[40px] leading-none text-[#CA8A04]">{val}</p>
+            <p className="font-['Nunito_Sans',sans-serif] text-[10px] sm:text-[13px] text-[#a8a29e] mt-1.5 uppercase tracking-wider">{label}</p>
           </div>
         ))}
       </motion.div>
@@ -247,16 +247,16 @@ function BrandStorySection() {
 function PopItem({ num, bg, title, sub, img }: { num: string; bg: string; title: string; sub: string; img: string }) {
   return (
     <motion.div
-      className="bg-white rounded-2xl p-4 sm:p-5 flex items-center gap-4 sm:gap-5"
+      className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl shadow-lg shadow-black/5 p-4 sm:p-5 flex items-center gap-4 sm:gap-5"
       variants={fadeUp}
       whileHover={{ x: 4, transition: { duration: 0.2 } }}
     >
       <div className={`${bg} rounded-[14px] w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center shrink-0`}>
-        <span className="font-['Playfair_Display',serif] font-black text-[18px] sm:text-[22px] text-white">{num}</span>
+        <span className="font-['Rubik',sans-serif] font-black text-[18px] sm:text-[22px] text-white">{num}</span>
       </div>
       <div className="flex-1 min-w-0">
-        <p className="font-['Playfair_Display',serif] font-semibold text-[15px] sm:text-[16.8px] text-[#1a1a2e]">{title}</p>
-        <p className="font-['Inter',sans-serif] text-[11px] sm:text-[12px] text-[#8a8a9a] mt-0.5 truncate">{sub}</p>
+        <p className="font-['Rubik',sans-serif] font-semibold text-[15px] sm:text-[16.8px] text-[#1C1917]">{title}</p>
+        <p className="font-['Nunito_Sans',sans-serif] text-[11px] sm:text-[12px] text-[#a8a29e] mt-0.5 truncate">{sub}</p>
       </div>
       <div className="w-14 h-14 rounded-[14px] overflow-hidden shrink-0">
         <img alt={title} className="w-full h-full object-cover" src={img} />
@@ -270,8 +270,8 @@ function QualityPoint({ title, desc }: { title: string; desc: string }) {
     <motion.div className="flex gap-3 sm:gap-4 items-start" variants={fadeUp}>
       <CheckCircle />
       <div>
-        <p className="font-['Inter',sans-serif] font-semibold text-[13px] sm:text-[14px] text-[#1a1a2e]">{title}</p>
-        <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#4a4a5c] mt-0.5">{desc}</p>
+        <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] text-[#1C1917]">{title}</p>
+        <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#44403C] mt-0.5">{desc}</p>
       </div>
     </motion.div>
   );
@@ -280,14 +280,14 @@ function QualityPoint({ title, desc }: { title: string; desc: string }) {
 function StatBadge({ value, suffix, label }: { value: number; suffix?: string; label: string }) {
   return (
     <motion.div
-      className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm text-center"
+      className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl shadow-lg shadow-black/5 p-4 sm:p-6 shadow-lg shadow-black/5 text-center"
       variants={fadeUp}
       whileHover={{ y: -4, transition: { duration: 0.2 } }}
     >
-      <p className="font-['Playfair_Display',serif] font-black text-[24px] sm:text-[36px] lg:text-[40px] leading-tight text-[#d10b78]">
+      <p className="font-['Rubik',sans-serif] font-black text-[24px] sm:text-[36px] lg:text-[40px] leading-tight text-[#CA8A04]">
         <Counter value={value} suffix={suffix} />
       </p>
-      <p className="font-['Inter',sans-serif] text-[10px] sm:text-[13px] text-[#4a4a5c] mt-1">{label}</p>
+      <p className="font-['Nunito_Sans',sans-serif] text-[10px] sm:text-[13px] text-[#44403C] mt-1">{label}</p>
     </motion.div>
   );
 }
@@ -319,11 +319,11 @@ export default function Home() {
   return (
     <div>
       {/* ── HERO ─────────────────────────────────────────────────────── */}
-      <section ref={heroRef} className="relative bg-[#faf7f2] w-full overflow-hidden">
+      <section ref={heroRef} className="relative bg-[#FAFAF9] w-full overflow-hidden">
         {/* Parallax warm gradient bg */}
         <motion.div
           className="absolute inset-0 pointer-events-none"
-          style={{ y: bgY, background: "linear-gradient(135deg, #faf7f2 0%, #f2ede4 55%, #fce8f3 100%)" }}
+          style={{ y: bgY, background: "linear-gradient(135deg, #FAFAF9 0%, #FAFAF9 55%, #fce8f3 100%)" }}
         />
 
         <div className="relative max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-12 pt-10 sm:pt-12 pb-12 sm:pb-16 lg:pb-20">
@@ -332,7 +332,7 @@ export default function Home() {
             {/* ── LEFT: Typography ──────────────────────────────────── */}
             <div className="flex-1 min-w-0">
               <motion.p
-                className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12.8px] tracking-[2.56px] uppercase text-[#2d2f8e]"
+                className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12.8px] tracking-[2.56px] uppercase text-[#2d2f8e]"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease }}
@@ -343,7 +343,7 @@ export default function Home() {
               {/* Parallax title */}
               <motion.div style={{ y: titleY, opacity: titleOpacity }}>
                 <motion.h1
-                  className="font-['Playfair_Display',serif] font-black leading-[0.9] tracking-[-0.03em] text-[#e40a7a] mt-3 sm:mt-4 text-[clamp(52px,8vw,130px)]"
+                  className="font-['Rubik',sans-serif] font-black leading-[0.9] tracking-[-0.03em] text-[#e40a7a] mt-3 sm:mt-4 text-[clamp(52px,8vw,130px)]"
                   initial={{ opacity: 0, y: 48 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, ease, delay: 0.1 }}
@@ -354,7 +354,7 @@ export default function Home() {
               </motion.div>
 
               <motion.p
-                className="font-['Playfair_Display',serif] font-semibold text-[14px] sm:text-[17px] leading-snug text-[#1a1a2e] mt-5 max-w-sm"
+                className="font-['Rubik',sans-serif] font-semibold text-[14px] sm:text-[17px] leading-snug text-[#1C1917] mt-5 max-w-sm"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease, delay: 0.3 }}
@@ -369,13 +369,13 @@ export default function Home() {
                 transition={{ duration: 0.6, ease, delay: 0.45 }}
               >
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <Link to="/visit-us" className="bg-[#E6007E] text-white rounded-full px-5 sm:px-6 py-2.5 sm:py-3 flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#b50060] transition-colors shadow-[0_4px_20px_rgba(230,0,126,0.35)]">
+                  <Link to="/visit-us" className="bg-[#E6007E] text-white rounded-full px-5 sm:px-6 py-2.5 sm:py-3 flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#b50060] transition-colors shadow-[0_4px_20px_rgba(230,0,126,0.35)]">
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C5.51 1.5 3.5 3.51 3.5 6C3.5 9 8 14.5 8 14.5C8 14.5 12.5 9 12.5 6C12.5 3.51 10.49 1.5 8 1.5Z" stroke="white" strokeWidth="1.33" strokeLinecap="round"/><circle cx="8" cy="6" r="1.5" stroke="white" strokeWidth="1.33"/></svg>
                     Visit Our Store
                   </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-                  <a href="#" className="border-2 border-[#2D5BFF] text-[#2D5BFF] rounded-full px-5 sm:px-6 py-2.5 sm:py-3 flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#2D5BFF] hover:text-white transition-colors">
+                  <a href="#" className="border-2 border-[#2D5BFF] text-[#2D5BFF] rounded-full px-5 sm:px-6 py-2.5 sm:py-3 flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#2D5BFF] hover:text-white transition-colors">
                     <WAIcon size={13} color="currentColor" /> WhatsApp Us
                   </a>
                 </motion.div>
@@ -390,8 +390,8 @@ export default function Home() {
               >
                 {[["500+", "Products"], ["7", "Days Open"], ["₹149", "From"]].map(([v, l]) => (
                   <div key={l}>
-                    <p className="font-['Playfair_Display',serif] font-black text-[20px] sm:text-[24px] text-[#1a1a2e] leading-none">{v}</p>
-                    <p className="font-['Inter',sans-serif] text-[10px] sm:text-[11px] text-[#8a8a9a] uppercase tracking-wider mt-1">{l}</p>
+                    <p className="font-['Rubik',sans-serif] font-black text-[20px] sm:text-[24px] text-[#1C1917] leading-none">{v}</p>
+                    <p className="font-['Nunito_Sans',sans-serif] text-[10px] sm:text-[11px] text-[#a8a29e] uppercase tracking-wider mt-1">{l}</p>
                   </div>
                 ))}
               </motion.div>
@@ -411,15 +411,15 @@ export default function Home() {
       <BrandStorySection />
 
       {/* ── COLLECTIONS STARTING FROM ──────────────────────────────────── */}
-      <section className="bg-[#1a1a2e] w-full py-16 sm:py-20">
+      <section className="bg-[#1C1917] w-full py-16 sm:py-20">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10">
           <ScrollReveal>
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <div>
                 <Label>Transparent Pricing</Label>
-                <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-white mt-2">Collections Starting From</h2>
+                <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-white mt-2">Collections Starting From</h2>
               </div>
-              <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#8a8aa8] max-w-xs sm:text-right">No hidden costs. Visit the store to see the full range.</p>
+              <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#a8a29e] max-w-xs sm:text-right">No hidden costs. Visit the store to see the full range.</p>
             </div>
           </ScrollReveal>
           <StaggerGrid className="mt-8 flex gap-3 overflow-x-auto pb-3 -mx-4 px-4 sm:-mx-8 sm:px-8 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-8" delayStep={0.07}>
@@ -433,7 +433,7 @@ export default function Home() {
             <PricingCard img={imgPricingSports} label="Sports Shoes"    price="₹499" />
           </StaggerGrid>
           <ScrollReveal className="mt-6 flex justify-center" delay={0.2}>
-            <Link to="/price-guide" className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#d10b78] font-semibold flex items-center gap-1 hover:underline">
+            <Link to="/price-guide" className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#CA8A04] font-semibold flex items-center gap-1 hover:underline">
               See full price guide <ArrowRight />
             </Link>
           </ScrollReveal>
@@ -445,10 +445,10 @@ export default function Home() {
         <Label light>What We Carry</Label>
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mt-3">
           <ScrollReveal>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[30px] sm:text-[44px] lg:text-[56px] leading-tight text-[#e40a7a]">Explore Our Collections</h2>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[30px] sm:text-[44px] lg:text-[56px] leading-tight text-[#e40a7a]">Explore Our Collections</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <Link to="/collections" className="font-['Inter',sans-serif] text-[14px] text-[#d10b78] font-semibold flex items-center gap-1 shrink-0 hover:underline">View all <ArrowRight /></Link>
+            <Link to="/collections" className="font-['Nunito_Sans',sans-serif] text-[14px] text-[#CA8A04] font-semibold flex items-center gap-1 shrink-0 hover:underline">View all <ArrowRight /></Link>
           </ScrollReveal>
         </div>
         <StaggerGrid className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6" delayStep={0.1}>
@@ -462,7 +462,7 @@ export default function Home() {
       </Section>
 
       {/* ── WHY CHOOSE BAJI ────────────────────────────────────────────── */}
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-16">
           <motion.div
             className="lg:w-[480px] shrink-0"
@@ -472,10 +472,10 @@ export default function Home() {
             transition={{ duration: 0.7, ease }}
           >
             <Label light>The Baji Difference</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[28px] sm:text-[38px] lg:text-[48px] leading-tight text-[#e40a7a] mt-3">Why Customers Choose Baji</h2>
-            <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#4a4a5c] mt-5 mb-7">{"Sivagangai has plenty of shops. What makes Baji Footwear the one families return to year after year?"}</p>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[28px] sm:text-[38px] lg:text-[48px] leading-tight text-[#e40a7a] mt-3">Why Customers Choose Baji</h2>
+            <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#44403C] mt-5 mb-7">{"Sivagangai has plenty of shops. What makes Baji Footwear the one families return to year after year?"}</p>
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="inline-block">
-              <Link to="/about" className="bg-[#d10b78] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
+              <Link to="/about" className="bg-[#CA8A04] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
                 Our Story
               </Link>
             </motion.div>
@@ -489,23 +489,23 @@ export default function Home() {
               { t: "Expert Staff", d: "Guidance on the right size, fit and style — not the priciest option." },
               { t: "Open 7 Days", d: "9 AM–9 PM weekdays. 10 AM–8 PM Sundays." },
             ].map(({ t, d }) => (
-              <FeatureCard key={t} icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 9L7.5 11.5L13 6" stroke="#D10B78" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><circle cx="9" cy="9" r="7.25" stroke="#D10B78" strokeWidth="1.5"/></svg>} title={t} desc={d} />
+              <FeatureCard key={t} icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 9L7.5 11.5L13 6" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><circle cx="9" cy="9" r="7.25" stroke="#CA8A04" strokeWidth="1.5"/></svg>} title={t} desc={d} />
             ))}
           </StaggerGrid>
         </div>
       </Section>
 
       {/* ── POPULAR ────────────────────────────────────────────────────── */}
-      <Section bg="bg-[#faf7f2]">
+      <Section bg="bg-[#FAFAF9]">
         <Label light>Customer Favourites</Label>
         <ScrollReveal>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[30px] sm:text-[44px] lg:text-[56px] leading-tight text-[#e40a7a] mt-3">Popular in Sivagangai</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[30px] sm:text-[44px] lg:text-[56px] leading-tight text-[#e40a7a] mt-3">Popular in Sivagangai</h2>
         </ScrollReveal>
         <StaggerGrid className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5" delayStep={0.1}>
-          <PopItem num="01" bg="bg-[#d10b78]" title="School Bags"        sub="Most bought before every term"              img={imgPop1} />
-          <PopItem num="02" bg="bg-[#1a1a2e]" title="Kids Footwear"      sub="Top pick for growing families"              img={imgPop2} />
-          <PopItem num="03" bg="bg-[#1a1a2e]" title="Men's Formal Shoes" sub="Office & wedding season favourite"          img={imgPop3} />
-          <PopItem num="04" bg="bg-[#1a1a2e]" title="Travel Bags"        sub="High demand before pilgrimages & festivals" img={imgPop4} />
+          <PopItem num="01" bg="bg-[#CA8A04]" title="School Bags"        sub="Most bought before every term"              img={imgPop1} />
+          <PopItem num="02" bg="bg-[#1C1917]" title="Kids Footwear"      sub="Top pick for growing families"              img={imgPop2} />
+          <PopItem num="03" bg="bg-[#1C1917]" title="Men's Formal Shoes" sub="Office & wedding season favourite"          img={imgPop3} />
+          <PopItem num="04" bg="bg-[#1C1917]" title="Travel Bags"        sub="High demand before pilgrimages & festivals" img={imgPop4} />
         </StaggerGrid>
       </Section>
 
@@ -548,10 +548,10 @@ export default function Home() {
           <div className="flex-1">
             <Label light>Our Standards</Label>
             <ScrollReveal>
-              <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[48px] leading-tight text-[#e40a7a] mt-3">The Quality Promise</h2>
+              <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[48px] leading-tight text-[#e40a7a] mt-3">The Quality Promise</h2>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#4a4a5c] mt-5">{"We visit suppliers in person to inspect materials. If it wouldn't last a Sivagangai school year, it doesn't reach our shelves."}</p>
+              <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#44403C] mt-5">{"We visit suppliers in person to inspect materials. If it wouldn't last a Sivagangai school year, it doesn't reach our shelves."}</p>
             </ScrollReveal>
             <StaggerGrid className="mt-7 flex flex-col gap-5" delayStep={0.1}>
               <QualityPoint title="Strong Stitching" desc="Every bag tested for stitch quality — holds through daily school and travel use." />
@@ -564,14 +564,14 @@ export default function Home() {
       </Section>
 
       {/* ── STORE EXPERIENCE ───────────────────────────────────────────── */}
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10 sm:mb-12">
           <ScrollReveal>
             <Label light>Inside The Store</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[38px] lg:text-[52px] leading-tight text-[#1a1a2e] mt-3">The Store Experience</h2>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[38px] lg:text-[52px] leading-tight text-[#1C1917] mt-3">The Store Experience</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
-            <Link to="/gallery" className="font-['Inter',sans-serif] text-[14px] text-[#d10b78] font-semibold flex items-center gap-1 shrink-0 hover:underline">See gallery <ArrowRight /></Link>
+            <Link to="/gallery" className="font-['Nunito_Sans',sans-serif] text-[14px] text-[#CA8A04] font-semibold flex items-center gap-1 shrink-0 hover:underline">See gallery <ArrowRight /></Link>
           </ScrollReveal>
         </div>
         <StaggerGrid className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4" delayStep={0.1}>
@@ -593,10 +593,10 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
           <ScrollReveal>
             <Label light>Store Gallery</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[38px] lg:text-[52px] leading-tight text-[#1a1a2e] mt-3">From Our Store</h2>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[38px] lg:text-[52px] leading-tight text-[#1C1917] mt-3">From Our Store</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <Link to="/gallery" className="font-['Inter',sans-serif] text-[14px] text-[#d10b78] font-semibold flex items-center gap-1 shrink-0 hover:underline">Full gallery <ArrowRight /></Link>
+            <Link to="/gallery" className="font-['Nunito_Sans',sans-serif] text-[14px] text-[#CA8A04] font-semibold flex items-center gap-1 shrink-0 hover:underline">Full gallery <ArrowRight /></Link>
           </ScrollReveal>
         </div>
         {/* Mobile: simple 2-col */}
@@ -639,7 +639,7 @@ export default function Home() {
         <ScrollReveal>
           <div className="text-center mb-10">
             <Label center light>Frequently Asked Questions</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1a1a2e] mt-3">Common Questions Answered</h2>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1C1917] mt-3">Common Questions Answered</h2>
           </div>
         </ScrollReveal>
         <div className="max-w-[700px] mx-auto flex flex-col gap-2">
@@ -652,20 +652,20 @@ export default function Home() {
       </Section>
 
       {/* ── WHATSAPP CTA ───────────────────────────────────────────────── */}
-      <section className="bg-[#1a1a2e] w-full py-16 sm:py-20 lg:py-24">
+      <section className="bg-[#1C1917] w-full py-16 sm:py-20 lg:py-24">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
           <ScrollReveal>
             <Label>Quick Enquiry</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-white mt-4">What Are You Looking For?</h2>
-            <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] text-[#8a8aa8] mt-3 max-w-md mx-auto">{"Select a category and we'll open a WhatsApp chat with your enquiry ready to send."}</p>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-white mt-4">What Are You Looking For?</h2>
+            <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#a8a29e] mt-3 max-w-md mx-auto">{"Select a category and we'll open a WhatsApp chat with your enquiry ready to send."}</p>
           </ScrollReveal>
           <StaggerGrid className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3" delayStep={0.06}>
             {["🎒 School Bags","🧳 Travel Bags","👞 Men's Footwear","👠 Women's Footwear","👟 Kids Footwear","👜 Hand Bags","🥪 Lunch Bags","🏃 Sports Shoes"].map(item => (
               <motion.button
                 key={item}
-                className="border-2 border-[#2e2e4a] text-[#c0c0d0] rounded-full px-3.5 sm:px-4 py-2.5 font-['Inter',sans-serif] font-medium text-[12px] sm:text-[14px]"
+                className="border-2 border-[#2e2e4a] text-[#c0c0d0] rounded-full px-3.5 sm:px-4 py-2.5 font-['Nunito_Sans',sans-serif] font-medium text-[12px] sm:text-[14px]"
                 variants={fadeUp}
-                whileHover={{ borderColor: "#d10b78", color: "#ffffff", scale: 1.04, transition: { duration: 0.15 } }}
+                whileHover={{ borderColor: "#CA8A04", color: "#ffffff", scale: 1.04, transition: { duration: 0.15 } }}
                 whileTap={{ scale: 0.96 }}
               >
                 {item}
@@ -675,7 +675,7 @@ export default function Home() {
           <ScrollReveal delay={0.4}>
             <motion.a
               href="#"
-              className="mt-8 bg-[#25d366] text-white rounded-full px-7 py-3.5 inline-flex items-center gap-3 font-['Inter',sans-serif] font-bold text-[15px]"
+              className="mt-8 bg-[#25d366] text-white rounded-full px-7 py-3.5 inline-flex items-center gap-3 font-['Nunito_Sans',sans-serif] font-bold text-[15px]"
               whileHover={{ scale: 1.05, backgroundColor: "#1da855" }}
               whileTap={{ scale: 0.97 }}
             >

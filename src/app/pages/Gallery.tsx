@@ -51,7 +51,7 @@ function GalleryCell({
       {label && (
         <>
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,26,46,0.7)] via-transparent to-transparent" />
-          <p className="absolute bottom-3 left-3 font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] text-white">{label}</p>
+          <p className="absolute bottom-3 left-3 font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] text-white">{label}</p>
         </>
       )}
     </motion.div>
@@ -83,7 +83,7 @@ function HeroParallax() {
   }, [bgY, textY, fade]);
 
   return (
-    <section ref={ref} className="relative bg-[#1a1a2e] w-full overflow-hidden py-20 sm:py-28 lg:py-36">
+    <section ref={ref} className="relative bg-[#1C1917] w-full overflow-hidden py-20 sm:py-28 lg:py-36">
       {/* Parallax background collage */}
       <motion.div className="absolute inset-0 w-full h-[140%] -top-[20%]" style={{ y: bgY }}>
         <div className="grid grid-cols-3 h-full gap-1 opacity-30">
@@ -93,7 +93,7 @@ function HeroParallax() {
             </div>
           ))}
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a2e] via-transparent to-[#1a1a2e]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1C1917] via-transparent to-[#1C1917]" />
       </motion.div>
 
       {/* Parallax text */}
@@ -102,17 +102,17 @@ function HeroParallax() {
         style={{ y: textY, opacity: fade }}
       >
         <motion.p
-          className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#d10b78]"
+          className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#CA8A04]"
           initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease }}
         >Store Gallery</motion.p>
         <motion.h1
-          className="font-['Playfair_Display',serif] font-bold text-[40px] sm:text-[56px] lg:text-[72px] leading-tight text-white mt-3"
+          className="font-['Rubik',sans-serif] font-bold text-[40px] sm:text-[56px] lg:text-[72px] leading-tight text-white mt-3"
           initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease, delay: 0.1 }}
         >
           Inside Baji Footwear
         </motion.h1>
         <motion.p
-          className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] text-[#8a8aa8] mt-4 max-w-xl"
+          className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#a8a29e] mt-4 max-w-xl"
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease, delay: 0.25 }}
         >
           A virtual tour of our store in Sivagangai. Browse collections, see the layout and feel the experience before you visit.
@@ -120,7 +120,7 @@ function HeroParallax() {
         <motion.div
           initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease, delay: 0.4 }}
         >
-          <Link to="/visit-us" className="mt-8 inline-flex items-center gap-2 bg-[#d10b78] text-white rounded-full px-7 py-3.5 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
+          <Link to="/visit-us" className="mt-8 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-7 py-3.5 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
             See It In Person
           </Link>
         </motion.div>
@@ -145,7 +145,7 @@ export default function Gallery() {
       <Section bg="bg-white">
         <ScrollReveal>
           <Label light>The Store</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Store Exterior & Main Areas</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-3">Store Exterior & Main Areas</h2>
         </ScrollReveal>
 
         {/* Mobile grid */}
@@ -178,10 +178,10 @@ export default function Gallery() {
       </Section>
 
       {/* ── FOOTWEAR COLLECTION ──────────────────────────────────── */}
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <ScrollReveal>
           <Label light>Footwear Collection</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Footwear Displays</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-3">Footwear Displays</h2>
         </ScrollReveal>
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {[
@@ -210,7 +210,7 @@ export default function Gallery() {
       <Section bg="bg-white">
         <ScrollReveal>
           <Label light>School Bags Collection</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Bags for Every School</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-3">Bags for Every School</h2>
         </ScrollReveal>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
           <GalleryCell src={imgColSchool} label="School Bags"      className="h-52 sm:h-64 lg:h-72" speed={0.12} delay={0} />
@@ -224,13 +224,13 @@ export default function Gallery() {
       <ParallaxBand img={imgColTravel} className="py-20 sm:py-28" overlayOpacity={0.65}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
           <ScrollReveal>
-            <p className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#d10b78]">Travel Bags Collection</p>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[28px] sm:text-[40px] lg:text-[52px] leading-tight text-white mt-3">Travel Bags & Luggage</h2>
+            <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#CA8A04]">Travel Bags Collection</p>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[28px] sm:text-[40px] lg:text-[52px] leading-tight text-white mt-3">Travel Bags & Luggage</h2>
           </ScrollReveal>
         </div>
       </ParallaxBand>
 
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
           <GalleryCell src={imgColTravel} label="Travel Bags"    className="h-44 sm:h-56 lg:h-64" speed={0.14} delay={0} />
           <GalleryCell src={imgPop4}      label="Duffel Bags"   className="h-44 sm:h-56 lg:h-64" speed={0.19} delay={0.07} />
@@ -242,8 +242,8 @@ export default function Gallery() {
       <Section bg="bg-white">
         <ScrollReveal>
           <Label light>New Arrivals Gallery</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Fresh Stock</h2>
-          <p className="font-['Inter',sans-serif] text-[14px] sm:text-[15px] text-[#4a4a5c] mt-3 max-w-xl">We update our stock every month. Visit the store regularly to see what's new.</p>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-3">Fresh Stock</h2>
+          <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[15px] text-[#44403C] mt-3 max-w-xl">We update our stock every month. Visit the store regularly to see what's new.</p>
         </ScrollReveal>
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
           <GalleryCell src={imgPop2}      className="h-40 sm:h-52" speed={0.13} delay={0} />
@@ -258,24 +258,24 @@ export default function Gallery() {
       <ParallaxBand img={imgStoreMain} className="py-20 sm:py-28" overlayOpacity={0.72}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
           <ScrollReveal>
-            <p className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#d10b78]">Customer Moments</p>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[28px] sm:text-[40px] lg:text-[52px] leading-tight text-white mt-3">The Shopping Experience</h2>
-            <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] text-[#c0c0d0] mt-4 max-w-md mx-auto">A relaxed, organised store where families shop at their own pace.</p>
+            <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#CA8A04]">Customer Moments</p>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[28px] sm:text-[40px] lg:text-[52px] leading-tight text-white mt-3">The Shopping Experience</h2>
+            <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#c0c0d0] mt-4 max-w-md mx-auto">A relaxed, organised store where families shop at their own pace.</p>
           </ScrollReveal>
         </div>
       </ParallaxBand>
 
       {/* ── CTA ──────────────────────────────────────────────────── */}
-      <Section bg="bg-[#faf7f2]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="text-center">
           <ScrollReveal>
-            <p className="font-['Inter',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#d10b78]">Come Visit</p>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1a1a2e] mt-3">See It In Person</h2>
-            <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] text-[#4a4a5c] mt-4 max-w-md mx-auto">Photos only tell part of the story. Visit our store in Sivagangai to browse, try and experience the full collection.</p>
+            <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#CA8A04]">Come Visit</p>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1C1917] mt-3">See It In Person</h2>
+            <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#44403C] mt-4 max-w-md mx-auto">Photos only tell part of the story. Visit our store in Sivagangai to browse, try and experience the full collection.</p>
           </ScrollReveal>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link to="/visit-us" className="bg-[#d10b78] text-white rounded-full px-7 py-3.5 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">Plan Your Visit</Link>
-            <Link to="/collections" className="border-2 border-[#1a1a2e] text-[#1a1a2e] rounded-full px-7 py-3.5 font-['Inter',sans-serif] font-semibold text-[14px] hover:bg-[#1a1a2e] hover:text-white transition-colors">Browse Collections</Link>
+            <Link to="/visit-us" className="bg-[#CA8A04] text-white rounded-full px-7 py-3.5 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">Plan Your Visit</Link>
+            <Link to="/collections" className="border-2 border-[#1C1917] text-[#1C1917] rounded-full px-7 py-3.5 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#1C1917] hover:text-white transition-colors">Browse Collections</Link>
           </div>
         </div>
       </Section>

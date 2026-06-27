@@ -15,7 +15,7 @@ export default function TravelBags() {
         label="Travel Bags in Sivagangai"
         heading="Travel Bags in Sivagangai"
         subheading="Sivagangai's go-to store for travel luggage. Trolley bags, duffel bags and family travel solutions — starting from ₹799."
-        bg="bg-[#faf7f2]"
+        bg="bg-[#FAFAF9]"
         img={imgColTravel}
         cta={{ label: "Ask on WhatsApp" }}
         ctaSecondary={{ label: "See Price Guide", href: "/price-guide" }}
@@ -31,33 +31,33 @@ export default function TravelBags() {
       {/* TRAVEL COLLECTIONS */}
       <Section bg="bg-white">
         <Label light>Travel Collections</Label>
-        <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1a1a2e] mt-3">Every Type of Travel, Covered</h2>
-        <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#4a4a5c] mt-5 max-w-2xl">Whether you're travelling for a weekend pilgrimage to Rameswaram, a family train journey or a flight, Baji Footwear has the right travel bag for you.</p>
+        <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1C1917] mt-3">Every Type of Travel, Covered</h2>
+        <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#44403C] mt-5 max-w-2xl">Whether you're travelling for a weekend pilgrimage to Rameswaram, a family train journey or a flight, Baji Footwear has the right travel bag for you.</p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {TYPES.map(({ title, desc, price }) => (
-            <div key={title} className="bg-[#f2ede4] rounded-2xl p-6 flex flex-col">
+            <div key={title} className="bg-[#FAFAF9] rounded-2xl p-6 flex flex-col">
               <div className="flex items-start justify-between gap-4">
-                <p className="font-['Playfair_Display',serif] font-bold text-[18px] sm:text-[20px] text-[#1a1a2e]">{title}</p>
-                <span className="bg-[#d10b78] text-white font-['Inter',sans-serif] font-bold text-[12px] px-3 py-1 rounded-full shrink-0">From {price}</span>
+                <p className="font-['Rubik',sans-serif] font-bold text-[18px] sm:text-[20px] text-[#1C1917]">{title}</p>
+                <span className="bg-[#CA8A04] text-white font-['Nunito_Sans',sans-serif] font-bold text-[12px] px-3 py-1 rounded-full shrink-0">From {price}</span>
               </div>
-              <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#4a4a5c] mt-3 flex-1">{desc}</p>
+              <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#44403C] mt-3 flex-1">{desc}</p>
             </div>
           ))}
         </div>
       </Section>
 
       {/* POPULAR */}
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center">
           <div className="flex-1">
             <Label light>Most Popular</Label>
-            <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#e40a7a] mt-3">Trusted Before Every Journey</h2>
-            <p className="font-['Inter',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#4a4a5c] mt-5">{"Sivagangai families choose Baji Footwear's travel bags for pilgrimages, family train journeys and holidays. Our travel collection sees its highest demand before festival seasons and pilgrimage months."}</p>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#e40a7a] mt-3">Trusted Before Every Journey</h2>
+            <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#44403C] mt-5">{"Sivagangai families choose Baji Footwear's travel bags for pilgrimages, family train journeys and holidays. Our travel collection sees its highest demand before festival seasons and pilgrimage months."}</p>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {["Rameswaram pilgrimage trips","Family train holidays","Vaishno Devi journeys","Weekend city breaks","College study trips","Office work travel"].map(u => (
                 <div key={u} className="flex items-center gap-2.5 bg-white rounded-xl px-4 py-3">
-                  <div className="w-2 h-2 rounded-full bg-[#d10b78] shrink-0"/>
-                  <span className="font-['Inter',sans-serif] text-[13px] text-[#4a4a5c]">{u}</span>
+                  <div className="w-2 h-2 rounded-full bg-[#CA8A04] shrink-0"/>
+                  <span className="font-['Nunito_Sans',sans-serif] text-[13px] text-[#44403C]">{u}</span>
                 </div>
               ))}
             </div>
@@ -69,8 +69,8 @@ export default function TravelBags() {
       {/* PRICE RANGE */}
       <Section bg="bg-white">
         <Label light>Transparent Pricing</Label>
-        <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-3">Travel Bag Price Range</h2>
-        <p className="font-['Inter',sans-serif] text-[14px] sm:text-[15px] text-[#4a4a5c] mt-3 mb-8">Prices vary by size, brand and material. Visit us or WhatsApp to check current stock.</p>
+        <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-3">Travel Bag Price Range</h2>
+        <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[15px] text-[#44403C] mt-3 mb-8">Prices vary by size, brand and material. Visit us or WhatsApp to check current stock.</p>
         <div className="flex flex-col gap-4">
           <PriceRow img={imgPricingTravel} label="Duffel / Pilgrimage Bags" start="₹799"  avg="₹1199" premium="₹1799" note="Spacious, durable, popular for pilgrimages" />
           <PriceRow img={imgColTravel}     label="Trolley / Wheel Bags"    start="₹1299" avg="₹1899" premium="₹3499" note="Cabin and check-in sizes available" />
@@ -81,16 +81,16 @@ export default function TravelBags() {
       <ParallaxBand img={imgColTravel} className="py-12 sm:py-14" overlayOpacity={0.72}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
           <ScrollReveal>
-            <p className="font-['Playfair_Display',serif] font-bold text-[22px] sm:text-[28px] text-white">Travel Tips from Baji Footwear</p>
+            <p className="font-['Rubik',sans-serif] font-bold text-[22px] sm:text-[28px] text-white">Travel Tips from Baji Footwear</p>
           </ScrollReveal>
         </div>
       </ParallaxBand>
 
       {/* TRAVEL TIPS */}
-      <Section bg="bg-[#faf7f2]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="text-center mb-10">
           <Label center light>Travel Tips</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[32px] lg:text-[38px] leading-tight text-[#1a1a2e] mt-3">Choosing the Right Travel Bag</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[32px] lg:text-[38px] leading-tight text-[#1C1917] mt-3">Choosing the Right Travel Bag</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
@@ -101,19 +101,19 @@ export default function TravelBags() {
             { t: "Weekend Breaks", tip: "An overnight duffel or weekend bag is faster to pack and unpack than full luggage. Look for multiple pockets." },
             { t: "Office Travel", tip: "A laptop-compatible duffel with a trolley sleeve fits cabin storage and keeps work documents protected." },
           ].map(({ t, tip }) => (
-            <div key={t} className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="font-['Playfair_Display',serif] font-bold text-[15px] sm:text-[16px] text-[#d10b78]">{t}</p>
-              <p className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#4a4a5c] mt-2">{tip}</p>
+            <div key={t} className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl shadow-lg shadow-black/5 p-5 shadow-lg shadow-black/5">
+              <p className="font-['Rubik',sans-serif] font-bold text-[15px] sm:text-[16px] text-[#CA8A04]">{t}</p>
+              <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] leading-[22px] text-[#44403C] mt-2">{tip}</p>
             </div>
           ))}
         </div>
       </Section>
 
       {/* FAQ */}
-      <Section bg="bg-[#f2ede4]">
+      <Section bg="bg-[#FAFAF9]">
         <div className="text-center mb-10">
           <Label center light>Common Questions</Label>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[24px] sm:text-[32px] lg:text-[38px] leading-tight text-[#1a1a2e] mt-3">Travel Bag FAQs</h2>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[24px] sm:text-[32px] lg:text-[38px] leading-tight text-[#1C1917] mt-3">Travel Bag FAQs</h2>
         </div>
         <div className="max-w-[700px] mx-auto flex flex-col gap-2">
           <FaqItem question="Do you carry cabin baggage size trolleys?" answer="Yes. We carry 20-inch spinner trolleys suitable for most airline cabin baggage requirements. WhatsApp us to confirm current stock and pricing." />

@@ -55,34 +55,34 @@ function CategorySection({ cat, index }: { cat: typeof CATEGORIES[0]; index: num
         <div className="w-full lg:w-[420px] xl:w-[480px] shrink-0">
           <div className="relative rounded-2xl overflow-hidden h-64 sm:h-80">
             <ParallaxImage src={cat.img} alt={cat.title} className="w-full h-full" speed={cat.speed} />
-            <span className="absolute top-4 left-4 bg-[#d10b78] text-white font-['Inter',sans-serif] font-bold text-[13px] px-3 py-1.5 rounded-full z-10">From {cat.price}</span>
+            <span className="absolute top-4 left-4 bg-[#CA8A04] text-white font-['Nunito_Sans',sans-serif] font-bold text-[13px] px-3 py-1.5 rounded-full z-10">From {cat.price}</span>
           </div>
           <div className="mt-4 grid grid-cols-2 gap-2">
             {cat.popular.map(p => (
-              <div key={p} className="bg-[#f2ede4] rounded-xl px-3 py-2.5 text-center">
-                <span className="font-['Inter',sans-serif] text-[12px] sm:text-[13px] text-[#4a4a5c]">{p}</span>
+              <div key={p} className="bg-[#FAFAF9] rounded-xl px-3 py-2.5 text-center">
+                <span className="font-['Nunito_Sans',sans-serif] text-[12px] sm:text-[13px] text-[#44403C]">{p}</span>
               </div>
             ))}
           </div>
         </div>
         {/* Text */}
         <ScrollReveal className="flex-1">
-          <p className="font-['Inter',sans-serif] font-semibold text-[11px] tracking-[2.4px] uppercase text-[#d10b78]">Collection</p>
-          <h2 className="font-['Playfair_Display',serif] font-bold text-[26px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1a1a2e] mt-2">{cat.title}</h2>
-          <p className="font-['Inter',sans-serif] text-[14px] sm:text-[15px] text-[#4a4a5c] mt-2">{cat.subtitle}</p>
-          <p className="font-['Inter',sans-serif] text-[14px] sm:text-[15px] leading-[25px] text-[#4a4a5c] mt-4">{cat.desc}</p>
+          <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] tracking-[2.4px] uppercase text-[#CA8A04]">Collection</p>
+          <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[34px] lg:text-[40px] leading-tight text-[#1C1917] mt-2">{cat.title}</h2>
+          <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[15px] text-[#44403C] mt-2">{cat.subtitle}</p>
+          <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[15px] leading-[25px] text-[#44403C] mt-4">{cat.desc}</p>
           <div className="mt-6">
-            <p className="font-['Inter',sans-serif] font-semibold text-[12px] sm:text-[13px] uppercase tracking-wide text-[#8a8a9a] mb-3">{"What's Available"}</p>
+            <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[12px] sm:text-[13px] uppercase tracking-wide text-[#a8a29e] mb-3">{"What's Available"}</p>
             <div className="flex flex-col gap-2">
               {cat.features.map(f => (
                 <div key={f} className="flex items-center gap-2.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#d10b78] shrink-0"/>
-                  <span className="font-['Inter',sans-serif] text-[13px] sm:text-[14px] text-[#4a4a5c]">{f}</span>
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#CA8A04] shrink-0"/>
+                  <span className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#44403C]">{f}</span>
                 </div>
               ))}
             </div>
           </div>
-          <a href="#" className="mt-7 inline-flex items-center gap-2 bg-[#d10b78] text-white rounded-full px-6 py-3 font-['Inter',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#b50967] transition-colors">
+          <a href="#" className="mt-7 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-6 py-3 font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#b50967] transition-colors">
             Ask About Availability <ArrowRight color="white" />
           </a>
         </ScrollReveal>
@@ -98,16 +98,16 @@ export default function Collections() {
         label="Our Collections"
         heading="Explore Our Collections"
         subheading="Six curated collections covering footwear and bags for every age, every occasion and every budget in Sivagangai."
-        bg="bg-[#faf7f2]"
+        bg="bg-[#FAFAF9]"
         cta={{ label: "Ask About Availability" }}
         ctaSecondary={{ label: "See Price Guide", href: "/price-guide" }}
       />
 
       {/* Category jump nav */}
-      <div className="bg-[#1a1a2e] py-4 sticky top-16 z-30 overflow-x-auto">
+      <div className="bg-[#1C1917] py-4 sticky top-16 z-30 overflow-x-auto">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 flex gap-4 sm:gap-6">
           {CATEGORIES.map(c => (
-            <a key={c.id} href={`#${c.id}`} className="font-['Inter',sans-serif] text-[12px] sm:text-[13px] font-medium text-[#c0c0d0] hover:text-white transition-colors whitespace-nowrap">{c.title}</a>
+            <a key={c.id} href={`#${c.id}`} className="font-['Nunito_Sans',sans-serif] text-[12px] sm:text-[13px] font-medium text-[#c0c0d0] hover:text-white transition-colors whitespace-nowrap">{c.title}</a>
           ))}
         </div>
       </div>
@@ -122,7 +122,7 @@ export default function Collections() {
       <ParallaxBand img={imgColMens} className="py-14 sm:py-16" overlayOpacity={0.78}>
         <div className="max-w-[1280px] mx-auto px-4 sm:px-8 lg:px-10 text-center">
           <ScrollReveal>
-            <p className="font-['Playfair_Display',serif] font-bold text-[22px] sm:text-[28px] lg:text-[34px] text-white">Explore Related Pages</p>
+            <p className="font-['Rubik',sans-serif] font-bold text-[22px] sm:text-[28px] lg:text-[34px] text-white">Explore Related Pages</p>
           </ScrollReveal>
         </div>
       </ParallaxBand>
