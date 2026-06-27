@@ -336,7 +336,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-12 xl:gap-16">
 
             {/* ── LEFT: Typography ──────────────────────────────────── */}
-            <div className="flex-1 min-w-0">
+            <motion.div className="flex-1 min-w-0" style={{ y: titleY, opacity: titleOpacity }}>
               <motion.p
                 className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12.8px] tracking-[2.56px] uppercase text-[#2d2f8e]"
                 initial={{ opacity: 0, y: 12 }}
@@ -346,19 +346,17 @@ export default function Home() {
                 Sivagangai, Tamil Nadu
               </motion.p>
 
-              {/* Parallax title */}
-              <motion.div style={{ y: titleY, opacity: titleOpacity }}>
-                <motion.h1
-                  className="font-['Rubik',sans-serif] font-black leading-[0.9] tracking-[-0.03em] text-[#e40a7a] mt-3 sm:mt-4 text-[clamp(52px,8vw,130px)] flex flex-col"
-                  initial={{ opacity: 0, y: 48 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.9, ease, delay: 0.1 }}
-                >
-                  <span>Baji</span>
-                  <span>Footwear</span>
-                  <span className="sr-only">: Sivagangai's Trusted Footwear & Bag Shop</span>
-                </motion.h1>
-              </motion.div>
+              {/* Title */}
+              <motion.h1
+                className="font-['Rubik',sans-serif] font-black leading-[0.9] tracking-[-0.03em] text-[#e40a7a] mt-3 sm:mt-4 text-[clamp(52px,8vw,130px)] flex flex-col"
+                initial={{ opacity: 0, y: 48 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, ease, delay: 0.1 }}
+              >
+                <span>Baji</span>
+                <span>Footwear</span>
+                <span className="sr-only">: Sivagangai's Trusted Footwear & Bag Shop</span>
+              </motion.h1>
 
               <motion.p
                 className="font-['Rubik',sans-serif] font-semibold text-[14px] sm:text-[17px] leading-snug text-[#1C1917] mt-5 max-w-md"
@@ -402,7 +400,7 @@ export default function Home() {
                   </div>
                 ))}
               </motion.div>
-            </div>
+            </motion.div>
 
             {/* ── RIGHT: Image Slider ───────────────────────────────── */}
             <div className="w-full lg:w-[440px] xl:w-[500px] shrink-0">
