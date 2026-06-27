@@ -366,7 +366,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease, delay: 0.3 }}
               >
-                Step into quality and comfort. As the leading footwear shop in Sivagangai, we offer a massive selection of over 500 premium shoes, school bags, and travel luggage. Experience honest pricing and expert fitting service.
+                Sivagangai's leading shop for premium footwear and bags. We offer over 500 products with honest pricing and expert fitting.
               </motion.p>
 
               <motion.div
