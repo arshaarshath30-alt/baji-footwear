@@ -71,11 +71,11 @@ export default function VisitUs() {
             </div>
           </div>
 
-          {/* Fake Map Embed */}
-          <div className="w-full lg:flex-1 rounded-2xl h-64 sm:h-80 lg:h-[400px] overflow-hidden shrink-0 bg-[#e8e0d4]">
+          {/* Map Embed */}
+          <div className="w-full lg:flex-1 rounded-2xl h-64 sm:h-80 lg:h-[400px] overflow-hidden shrink-0 bg-[#e8e0d4] relative">
             <iframe 
               title="Baji Footwear Location Map in Sivagangai"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15729.809187310064!2d78.4727189!3d9.8543152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00ed43d3b664d9%3A0xc3b438b47120df0d!2sSivaganga%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              src="https://maps.google.com/maps?q=9.84921751,78.48541013&hl=en&z=17&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -83,6 +83,12 @@ export default function VisitUs() {
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            <div className="absolute bottom-4 left-4 right-4 flex justify-end pointer-events-none">
+              <a href="https://www.google.com/maps/search/Baji%20Footwears/@9.84921751,78.48541013,17z?hl=en" target="_blank" rel="noopener noreferrer" className="pointer-events-auto bg-[#1C1917] text-white px-5 py-2.5 rounded-full font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] shadow-lg hover:bg-[#CA8A04] transition-colors flex items-center gap-2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M21 3L3 10.53L9.56 12.53L12 19.53L21 3ZM10.4 11.7L17.15 6L11.5 13.11L10.4 11.7Z" fill="white"/></svg>
+                Open in Google Maps
+              </a>
+            </div>
           </div>
         </div>
       </Section>
@@ -107,7 +113,7 @@ export default function VisitUs() {
         <div className="mt-6 bg-[#1C1917] rounded-2xl p-5 sm:p-6 text-center">
           <p className="font-['Rubik',sans-serif] font-semibold text-[16px] sm:text-[18px] text-white">Need help finding us?</p>
           <p className="font-['Nunito_Sans',sans-serif] text-[13px] sm:text-[14px] text-[#a8a29e] mt-2">Give us a call and we will guide you to our store.</p>
-          <a href="tel:+919876543210" className="mt-4 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-6 py-2.5 font-['Nunito_Sans',sans-serif] font-medium text-[13px] hover:bg-[#b50967] transition-colors">
+          <a href="tel:+917708877760" className="mt-4 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-6 py-2.5 font-['Nunito_Sans',sans-serif] font-medium text-[13px] hover:bg-[#b50967] transition-colors">
             <PhoneIcon color="white" /> Call for Directions
           </a>
         </div>
