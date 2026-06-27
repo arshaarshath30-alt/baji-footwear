@@ -16,7 +16,7 @@ export default function VisitUs() {
               <h1 className="font-['Rubik',sans-serif] font-bold text-[36px] sm:text-[48px] lg:text-[60px] leading-tight text-[#1C1917] mt-3">Visit Baji Footwear in Sivagangai</h1>
               <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[17px] leading-[1.6] text-[#44403C] mt-5 max-w-lg">Finding the right pair of shoes is easier in person. Our Sivagangai footwear showroom is centrally located and open seven days a week. Drop by to try on our latest collections or call us for directions.</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="tel:+919876543210" className="bg-[#CA8A04] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
+                <a href="tel:+917708877760" className="bg-[#CA8A04] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
                   <PhoneIcon color="white" /> Call Us Now
                 </a>
               </div>
@@ -56,7 +56,7 @@ export default function VisitUs() {
             <ContactRow
               icon={<WAIcon color="#CA8A04" />}
               label="WhatsApp"
-              value={<a href="#" className="hover:text-[#CA8A04] transition-colors">+91 98765 43210 — Click to chat</a>}
+              value={<a href="https://wa.me/917708877760" target="_blank" rel="noopener noreferrer" className="hover:text-[#CA8A04] transition-colors">+91 77088 77760 — Click to chat</a>}
             />
             <ContactRow
               icon={<ClockIcon />}

@@ -354,7 +354,7 @@ export function WACTABanner({ heading = "WhatsApp Us Before Visiting", body, img
           <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[34px] lg:text-[40px] leading-tight text-white">{heading}</h2>
           {body && <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#a8a29e] mt-3 max-w-md mx-auto">{body}</p>}
           <motion.a
-            href="#"
+            href="https://wa.me/917708877760" target="_blank" rel="noopener noreferrer"
             className="mt-7 bg-[#25d366] text-white rounded-full px-7 py-3.5 inline-flex items-center gap-3 font-['Nunito_Sans',sans-serif] font-bold text-[15px] hover:bg-[#1da855] transition-colors"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}

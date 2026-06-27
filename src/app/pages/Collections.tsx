@@ -82,7 +82,7 @@ function CategorySection({ cat, index }: { cat: typeof CATEGORIES[0]; index: num
               ))}
             </div>
           </div>
-          <a href="#" className="mt-7 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-6 py-3 font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#b50967] transition-colors">
+          <a href="https://wa.me/917708877760" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex items-center gap-2 bg-[#CA8A04] text-white rounded-full px-6 py-3 font-['Nunito_Sans',sans-serif] font-semibold text-[13px] sm:text-[14px] hover:bg-[#b50967] transition-colors">
             Ask About Availability <ArrowRight color="white" />
           </a>
         </ScrollReveal>
