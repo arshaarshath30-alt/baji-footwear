@@ -182,17 +182,23 @@ function BrandStorySection() {
           viewport={{ once: true }}
           transition={{ duration: 0.85, ease, delay: 0.1 }}
         >
-          Sivagangai's Most Trusted Footwear Destination
+          Why Sivagangai Families Choose Baji
         </motion.h2>
-        <motion.p
-          className="font-['Nunito_Sans',sans-serif] font-normal text-[14px] sm:text-[18px] leading-[1.7] sm:leading-[1.75] text-[#44403C] mt-5 sm:mt-6 max-w-[580px] mx-auto"
+        <motion.div
+          className="font-['Nunito_Sans',sans-serif] font-normal text-[14px] sm:text-[18px] leading-[1.7] sm:leading-[1.75] text-[#44403C] mt-5 sm:mt-6 max-w-[650px] mx-auto text-left"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, ease, delay: 0.22 }}
         >
-          We combine a wide selection, honest pricing, and knowledgeable service to deliver a better shopping experience for families, students, professionals, and travellers across Sivagangai.
-        </motion.p>
+          <p className="mb-4 text-center">We combine a wide selection, honest pricing, and knowledgeable service to deliver a better shopping experience for families, students, professionals, and travelers across Sivagangai and nearby Madurai.</p>
+          <ul className="list-disc pl-6 space-y-2 mt-4 text-[15px] sm:text-[16px] text-left">
+            <li><strong>Extensive Inventory:</strong> 500+ products including men's, women's, and kids' footwear.</li>
+            <li><strong>Affordable Pricing:</strong> High-quality collections starting from just ₹149.</li>
+            <li><strong>Specialized Bags:</strong> The largest local selection of school bags and travel luggage.</li>
+            <li><strong>Convenience:</strong> Open 7 days a week with dedicated local customer support.</li>
+          </ul>
+        </motion.div>
       </motion.div>
 
       {/* Cinematic full-width frame with parallax zoom */}
@@ -343,23 +349,24 @@ export default function Home() {
               {/* Parallax title */}
               <motion.div style={{ y: titleY, opacity: titleOpacity }}>
                 <motion.h1
-                  className="font-['Rubik',sans-serif] font-black leading-[0.9] tracking-[-0.03em] text-[#e40a7a] mt-3 sm:mt-4 text-[clamp(52px,8vw,130px)]"
+                  className="font-['Rubik',sans-serif] font-black leading-[0.9] tracking-[-0.03em] text-[#e40a7a] mt-3 sm:mt-4 text-[clamp(52px,8vw,130px)] flex flex-col"
                   initial={{ opacity: 0, y: 48 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.9, ease, delay: 0.1 }}
                 >
-                  <div>Baji</div>
-                  <div>Footwear</div>
+                  <span>Baji</span>
+                  <span>Footwear</span>
+                  <span className="sr-only">: Sivagangai's Trusted Footwear & Bag Shop</span>
                 </motion.h1>
               </motion.div>
 
               <motion.p
-                className="font-['Rubik',sans-serif] font-semibold text-[14px] sm:text-[17px] leading-snug text-[#1C1917] mt-5 max-w-sm"
+                className="font-['Rubik',sans-serif] font-semibold text-[14px] sm:text-[17px] leading-snug text-[#1C1917] mt-5 max-w-md"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease, delay: 0.3 }}
               >
-                {"Sivagangai's Trusted Destination for Footwear & Bags"}
+                Step into quality and comfort. As the leading footwear shop in Sivagangai, we offer a massive selection of over 500 premium shoes, school bags, and travel luggage. Experience honest pricing and expert fitting service.
               </motion.p>
 
               <motion.div
@@ -445,7 +452,7 @@ export default function Home() {
         <Label light>What We Carry</Label>
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mt-3">
           <ScrollReveal>
-            <h2 className="font-['Rubik',sans-serif] font-bold text-[30px] sm:text-[44px] lg:text-[56px] leading-tight text-[#e40a7a]">Explore Our Collections</h2>
+            <h2 className="font-['Rubik',sans-serif] font-bold text-[30px] sm:text-[44px] lg:text-[56px] leading-tight text-[#e40a7a]">Explore Our Premium Shoe Collections</h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <Link to="/collections" className="font-['Nunito_Sans',sans-serif] text-[14px] text-[#CA8A04] font-semibold flex items-center gap-1 shrink-0 hover:underline">View all <ArrowRight /></Link>
@@ -522,20 +529,20 @@ export default function Home() {
           >
             <div className="w-[260px] xl:w-[280px] h-[580px] rounded-2xl overflow-hidden">
               <motion.img
-                alt="Store" className="w-full h-full object-cover" src={imgStoreMain}
+                alt="Baji Footwear shop interior in Sivagangai showing premium shoe racks" className="w-full h-full object-cover" src={imgStoreMain}
                 initial={{ scale: 1.1 }} whileInView={{ scale: 1 }}
                 viewport={{ once: true }} transition={{ duration: 1.2, ease }}
               />
             </div>
             <div className="flex flex-col gap-4 w-[260px] xl:w-[280px]">
               <div className="h-[180px] rounded-2xl overflow-hidden">
-                <motion.img alt="" className="w-full h-full object-cover" src={imgStoreTopRight}
+                <motion.img alt="School bags display at Baji Footwear store" className="w-full h-full object-cover" src={imgStoreTopRight}
                   initial={{ scale: 1.1 }} whileInView={{ scale: 1 }}
                   viewport={{ once: true }} transition={{ duration: 1.2, ease, delay: 0.1 }}
                 />
               </div>
               <div className="flex-1 rounded-2xl overflow-hidden">
-                <motion.img alt="" className="w-full h-full object-cover" src={imgStoreBotRight}
+                <motion.img alt="Extensive travel luggage and trolley bags collection in Sivagangai" className="w-full h-full object-cover" src={imgStoreBotRight}
                   initial={{ scale: 1.1 }} whileInView={{ scale: 1 }}
                   viewport={{ once: true }} transition={{ duration: 1.2, ease, delay: 0.2 }}
                 />
@@ -604,7 +611,7 @@ export default function Home() {
           {[imgGallery1,imgGallery2,imgGallery3,imgGallery4].map((img,i) => (
             <AnimatedCard key={i}>
               <motion.div className="rounded-2xl overflow-hidden h-40 sm:h-52" whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }}>
-                <img alt="" className="w-full h-full object-cover" src={img}/>
+                <img alt="Baji Footwear Sivagangai store gallery image showing footwear and bags" className="w-full h-full object-cover" src={img}/>
               </motion.div>
             </AnimatedCard>
           ))}
@@ -617,7 +624,7 @@ export default function Home() {
             viewport={{ once: true }} transition={{ duration: 0.7, ease }}
             whileHover={{ scale: 1.01 }}
           >
-            <motion.img alt="" className="w-full h-full object-cover" src={imgGallery1}
+            <motion.img alt="Baji Footwear storefront and shoe racks gallery view" className="w-full h-full object-cover" src={imgGallery1}
               initial={{ scale: 1.08 }} whileInView={{ scale: 1 }}
               viewport={{ once: true }} transition={{ duration: 1.2, ease }}
             />
@@ -628,7 +635,7 @@ export default function Home() {
               viewport={{ once: true }} transition={{ duration: 0.6, ease, delay: i * 0.1 }}
               whileHover={{ scale: 1.02 }}
             >
-              <img alt="" className="w-full h-full object-cover" src={img}/>
+              <img alt="Baji Footwear Sivagangai store gallery collection image" className="w-full h-full object-cover" src={img}/>
             </motion.div>
           ))}
         </div>

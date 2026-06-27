@@ -3,46 +3,46 @@ import { Label, Section, PageHero, WACTABanner, ArrowRight, InternalLinks, Paral
 
 const CATEGORIES = [
   {
-    id: "mens", title: "Men's Footwear", subtitle: "From formal to casual — the complete collection for Sivagangai men.",
+    id: "mens", title: "Men's Formal & Casual Footwear", subtitle: "From formal office shoes to casual weekend sneakers — the complete collection for Sivagangai men.",
     img: imgColMens, price: "₹299", speed: 0.14,
-    features: ["Formal & office shoes","Casual daily wear","Sports & athletic shoes","Sandals & slippers","Ethnic & occasion wear"],
-    popular: ["Oxford formal shoes","Leather sandals","Running shoes","Loafers"],
-    desc: "Our men's footwear collection covers every occasion — from office presentations to weekend outings. All products are selected for durability, comfort and value.",
+    features: ["Formal & office leather shoes","Casual daily wear sneakers","Sports & athletic shoes for gym","Sandals & comfortable slippers","Ethnic & wedding occasion wear"],
+    popular: ["Oxford formal shoes","Leather sandals","Running shoes","Men's Loafers"],
+    desc: "Our men's footwear collection covers every occasion in Tamil Nadu's climate — from important office presentations to weekend outings in Karaikudi or Madurai. We stock durable, highly comfortable formal shoes, robust sports sneakers, and traditional ethnic wear. All products are selected for longevity, arch support, and exceptional value.",
   },
   {
-    id: "womens", title: "Women's Footwear", subtitle: "Elegant, comfortable and designed for everyday life.",
+    id: "womens", title: "Women's Elegant Sandals & Flats", subtitle: "Elegant, comfortable, and designed for the modern woman's everyday life.",
     img: imgColWomens, price: "₹249", speed: 0.17,
-    features: ["Heels & block heels","Ethnic & kolhapuri","Flats & ballet shoes","Wedge sandals","Sports & walking shoes"],
+    features: ["Heels & block heels for events","Ethnic & kolhapuri sandals","Flats & comfortable ballet shoes","Wedge sandals for support","Sports & walking shoes"],
     popular: ["Block heel sandals","Kolhapuri flats","Running shoes","Ethnic wedges"],
-    desc: "A carefully curated collection for every occasion — from temple visits and weddings to daily office and college wear.",
+    desc: "A carefully curated women's footwear collection for every occasion. Whether you need comfortable flats for daily college wear, supportive walking shoes, or elegant heels for temple visits and weddings in Sivagangai, we have hundreds of styles. Experience footwear that perfectly balances modern aesthetics with all-day comfort.",
   },
   {
-    id: "kids", title: "Kids Footwear", subtitle: "Durable, comfortable and built for active young feet.",
+    id: "kids", title: "Kids Footwear for School & Play", subtitle: "Durable, comfortable, and built to survive active young feet.",
     img: imgColKids, price: "₹199", speed: 0.12,
-    features: ["School shoes","Sneakers & canvas","Party & occasion","Sandals & slippers","Sports shoes"],
+    features: ["Black school shoes","Sneakers & canvas shoes","Party & occasion wear","Velcro sandals & slippers","Sports shoes for kids"],
     popular: ["Black school shoes","Canvas sneakers","Velcro sandals","Party pumps"],
-    desc: "Children's footwear that lasts the school year and beyond. Proper arch support, durable materials and styles kids actually love.",
+    desc: "Parents across Sivagangai trust our children's footwear to last the entire school year and beyond. Our kids shoes feature proper arch support, durable scuff-resistant materials, and styles that children actually love to wear. From standard uniform shoes to colorful weekend sandals, find the perfect fit for growing feet.",
   },
   {
-    id: "school-bags", title: "School Bags", subtitle: "Strong, spacious bags built to survive every school day.",
+    id: "school-bags", title: "Heavy-Duty School Bags", subtitle: "Strong, spacious backpacks built to survive every school day.",
     img: imgColSchool, price: "₹349", speed: 0.15,
-    features: ["Primary school bags","Middle school bags","High school bags","Laptop bags","Trolley school bags"],
+    features: ["Primary school backpacks","Middle school multi-compartment bags","High school heavy-duty bags","Laptop bags with padding","Trolley school bags"],
     popular: ["14-inch laptop bags","Ergonomic backpacks","Lightweight primary bags","High school trolleys"],
-    desc: "School bags parents trust and kids are proud to carry. Water-resistant fabrics, padded straps and sturdy zippers — built for a full school year.",
+    desc: "Prepare for the academic year with our heavy-duty school bags. Built to withstand daily use by students in Sivagangai, our backpacks feature reinforced stitching, water-resistant fabrics, and ergonomic padded straps for maximum back support. Trusted by parents for their exceptional durability and affordable pricing.",
   },
   {
-    id: "lunch-bags", title: "Lunch Bags", subtitle: "Insulated and easy to clean — for kids and adults.",
+    id: "lunch-bags", title: "Durable Lunch Bags", subtitle: "Insulated, waterproof, and easy to clean — for kids and office goers.",
     img: imgColLunch, price: "₹149", speed: 0.18,
-    features: ["Insulated lunch bags","Kids lunch boxes","Office lunch bags","Tote-style carriers","Waterproof lining"],
+    features: ["Insulated thermal lunch bags","Kids cartoon lunch boxes","Professional office lunch bags","Tote-style carriers","Waterproof easy-clean lining"],
     popular: ["Kids cartoon bags","Slim office tote","Insulated family bags","BPA-free lined bags"],
-    desc: "Practical lunch bags that keep food fresh and are easy to clean. Available in kids and adult sizes with a range of designs.",
+    desc: "Practical lunch bags designed to keep food fresh in the hot Tamil Nadu climate. These bags are incredibly easy to clean and feature waterproof linings. Available in fun sizes for kids and sleek, professional designs for adults heading to the office.",
   },
   {
-    id: "travel-bags", title: "Travel Bags", subtitle: "Ready for pilgrimages, family holidays and weekend trips.",
+    id: "travel-bags", title: "Travel Bags & Luggage", subtitle: "Ready for pilgrimages, family holidays, and weekend trips.",
     img: imgColTravel, price: "₹799", speed: 0.13,
-    features: ["Trolley/wheel bags","Duffel bags","Weekend bags","Cabin baggage","Family travel sets"],
+    features: ["Hard & soft trolley wheel bags","Spacious duffel bags","Weekend overnight bags","Cabin baggage compliant","Family travel luggage sets"],
     popular: ["20-inch cabin trolley","Large duffel bag","Expandable trolley","Pilgrimage duffel"],
-    desc: "Travel bags trusted by Sivagangai families for pilgrimages, train journeys and family trips. Durable zippers and water-resistant fabrics.",
+    desc: "Explore the largest selection of travel luggage in Sivagangai. Trusted by families for long pilgrimages, train journeys, and weekend trips to Madurai. Our travel bags feature heavy-duty zippers, water-resistant fabrics, and robust wheels to handle any terrain.",
   },
 ];
 
@@ -96,8 +96,8 @@ export default function Collections() {
     <div>
       <PageHero
         label="Our Collections"
-        heading="Explore Our Collections"
-        subheading="Six curated collections covering footwear and bags for every age, every occasion and every budget in Sivagangai."
+        heading="Premium Footwear & Bag Collections in Sivagangai"
+        subheading="Explore Sivagangai's most diverse range of footwear and bags. From elegant women's sandals to heavy-duty school backpacks designed to last the entire academic year, Baji Footwear guarantees quality at honest prices."
         bg="bg-[#FAFAF9]"
         cta={{ label: "Ask About Availability" }}
         ctaSecondary={{ label: "See Price Guide", href: "/price-guide" }}

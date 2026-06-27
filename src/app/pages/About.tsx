@@ -56,8 +56,8 @@ export default function About() {
     <div>
       <PageHero
         label="About Baji Footwear"
-        heading={"Serving Families\nAcross Sivagangai"}
-        subheading="More than a footwear and bag store — a trusted destination for quality, comfort, and everyday essentials for Sivagangai families."
+        heading={"Sivagangai's Trusted Shoe Store"}
+        subheading="More than a footwear and bag store — a trusted local business built on genuine pricing, product quality standards, and decades of serving Sivagangai families."
         img={imgGallery1}
         cta={{ label: "WhatsApp Us" }}
         ctaSecondary={{ label: "Visit the Store", href: "/visit-us" }}
@@ -80,9 +80,9 @@ export default function About() {
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <div className="mt-6 space-y-5 font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] leading-[27px] text-[#44403C]">
-                <p>Baji Footwear was started with a simple belief: every family in Sivagangai deserves access to quality footwear and bags at honest prices.</p>
-                <p>We began with a focused selection of footwear and grew steadily as customers trusted us. Today, our store carries 500+ products across footwear, school bags, travel bags, lunch bags and hand bags.</p>
-                <p>{"Our customers keep returning because they know exactly what to expect: knowledgeable staff, fair prices, genuine quality and a no-pressure shopping experience."}</p>
+                <p>Baji Footwear was started with a simple belief: every family in Sivagangai deserves access to premium footwear and highly durable bags at honest prices.</p>
+                <p>We began with a focused selection of footwear and grew steadily as customers across Karaikudi, Melur, and Madurai began trusting our brand. Today, our store carries 500+ products across footwear, school bags, travel bags, lunch bags and hand bags.</p>
+                <p>{"Our customers keep returning because they know exactly what to expect: knowledgeable staff, fair prices, genuine quality standards designed for Tamil Nadu's climate, and a no-pressure shopping experience."}</p>
               </div>
             </ScrollReveal>
           </div>
@@ -111,10 +111,10 @@ export default function About() {
           <ScrollReveal delay={0.1}><p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[16px] text-[#44403C] mt-4 max-w-xl mx-auto">Every decision comes back to one question: what is genuinely best for our customer?</p></ScrollReveal>
         </div>
         <StaggerGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" delayStep={0.08}>
-          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/><rect x="10" y="2" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/><rect x="2" y="10" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/></svg>} title="Wide Collection" desc="500+ products across footwear, school bags, travel bags, lunch bags and hand bags — all under one roof." />
-          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9H16M9 2V16" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round"/></svg>} title="Affordable Pricing" desc="Starting from ₹149. Transparent pricing — the price you see is the price you pay." />
-          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2L10.93 7.06L16.28 7.32L12.15 10.8L13.53 16L9 13L4.47 16L5.85 10.8L1.72 7.32L7.07 7.06L9 2Z" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>} title="New Arrivals Monthly" desc="We refresh our stock regularly. Visit us each season to discover what's new." />
-          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9C3 5.69 5.69 3 9 3C12.31 3 15 5.69 15 9C15 12.31 12.31 15 9 15C5.69 15 3 12.31 3 9Z" stroke="#CA8A04" strokeWidth="1.5"/><path d="M6 9L8 11L12 7" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>} title="Family-Friendly" desc="A relaxed, no-pressure environment. Browse at your own pace. Bring the whole family." />
+          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/><rect x="10" y="2" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/><rect x="2" y="10" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/><rect x="10" y="10" width="6" height="6" rx="1" stroke="#CA8A04" strokeWidth="1.5"/></svg>} title="Direct Supplier Relationships" desc="We bypass middlemen to source 500+ premium products, passing the massive savings directly to you." />
+          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 9H16M9 2V16" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round"/></svg>} title="Genuine Pricing" desc="Starting from ₹149. Transparent, fixed pricing with no hidden markups — the price you see is what you pay." />
+          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2L10.93 7.06L16.28 7.32L12.15 10.8L13.53 16L9 13L4.47 16L5.85 10.8L1.72 7.32L7.07 7.06L9 2Z" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>} title="Product Quality Standards" desc="We meticulously inspect bag stitching and test shoe soles to ensure they withstand local weather conditions." />
+          <FeatureCard icon={<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9C3 5.69 5.69 3 9 3C12.31 3 15 5.69 15 9C15 12.31 12.31 15 9 15C5.69 15 3 12.31 3 9Z" stroke="#CA8A04" strokeWidth="1.5"/><path d="M6 9L8 11L12 7" stroke="#CA8A04" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>} title="Decades of Trust" desc="A relaxed, family-friendly environment backed by years of serving the Sivagangai community with integrity." />
         </StaggerGrid>
       </Section>
 
@@ -141,12 +141,12 @@ export default function About() {
       <Section bg="bg-[#FAFAF9]">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
           {[
-            [imgStoreMain,     "Footwear Section",    0.12],
-            [imgStoreBags,     "Bags Section",        0.17],
-            [imgStoreShoeWall, "Shoe Wall",           0.14],
-            [imgStoreShopping, "Shopping Experience", 0.19],
-            [imgStoreTopRight, "New Arrivals",        0.13],
-            [imgStoreBotRight, "Store Interior",      0.16],
+            [imgStoreMain,     "Premium footwear section at Baji Footwear Sivagangai",    0.12],
+            [imgStoreBags,     "Durable school and travel bags collection",        0.17],
+            [imgStoreShoeWall, "Extensive shoe wall showing men's and women's footwear",           0.14],
+            [imgStoreShopping, "Family friendly footwear shopping experience in Sivagangai", 0.19],
+            [imgStoreTopRight, "New arrivals of casual and formal shoes",        0.13],
+            [imgStoreBotRight, "Baji Footwear store interior layout",      0.16],
           ].map(([img, label, speed], i) => (
             <motion.div
               key={label as string}

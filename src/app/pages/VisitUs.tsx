@@ -13,8 +13,8 @@ export default function VisitUs() {
           <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
             <div className="flex-1">
               <p className="font-['Nunito_Sans',sans-serif] font-semibold text-[11px] sm:text-[12px] tracking-[2.4px] uppercase text-[#CA8A04]">Visit Us</p>
-              <h1 className="font-['Rubik',sans-serif] font-bold text-[36px] sm:text-[48px] lg:text-[60px] leading-tight text-[#1C1917] mt-3">Plan Your Visit</h1>
-              <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[17px] leading-[1.6] text-[#44403C] mt-5 max-w-lg">Visit Baji Footwear in Sivagangai — open 7 days a week with 500+ products across footwear and bags. No appointment needed.</p>
+              <h1 className="font-['Rubik',sans-serif] font-bold text-[36px] sm:text-[48px] lg:text-[60px] leading-tight text-[#1C1917] mt-3">Visit Baji Footwear in Sivagangai</h1>
+              <p className="font-['Nunito_Sans',sans-serif] text-[14px] sm:text-[17px] leading-[1.6] text-[#44403C] mt-5 max-w-lg">Finding the right pair of shoes is easier in person. Our Sivagangai footwear showroom is centrally located and open seven days a week. Drop by to try on our latest collections or call us for directions.</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="tel:+919876543210" className="bg-[#CA8A04] text-white rounded-full px-6 py-3 inline-flex items-center gap-2 font-['Nunito_Sans',sans-serif] font-semibold text-[14px] hover:bg-[#b50967] transition-colors">
                   <PhoneIcon color="white" /> Call Us Now
@@ -22,9 +22,9 @@ export default function VisitUs() {
               </div>
             </div>
             <div className="w-full lg:w-[460px] shrink-0 grid grid-cols-2 gap-3">
-              <ParallaxImage src={imgStoreMain} alt="Store exterior" className="col-span-2 rounded-2xl h-48 sm:h-60" speed={0.12} />
-              <ParallaxImage src={imgStoreBags} alt="Store bags" className="rounded-2xl h-36 sm:h-40" speed={0.16} />
-              <ParallaxImage src={imgStoreShoeWall} alt="Shoe wall" className="rounded-2xl h-36 sm:h-40" speed={0.19} />
+              <ParallaxImage src={imgStoreMain} alt="Baji Footwear shop interior in Sivagangai showing premium shoe racks" className="col-span-2 rounded-2xl h-48 sm:h-60" speed={0.12} />
+              <ParallaxImage src={imgStoreBags} alt="Durable school bags collection at Baji Footwear Sivagangai" className="rounded-2xl h-36 sm:h-40" speed={0.16} />
+              <ParallaxImage src={imgStoreShoeWall} alt="Extensive travel luggage and trolley bags collection in Sivagangai" className="rounded-2xl h-36 sm:h-40" speed={0.19} />
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function VisitUs() {
       {/* STORE INFORMATION */}
       <Section bg="bg-white">
         <Label light>Store Information</Label>
-        <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1C1917] mt-3">Everything You Need to Know</h2>
+        <h2 className="font-['Rubik',sans-serif] font-bold text-[26px] sm:text-[36px] lg:text-[44px] leading-tight text-[#1C1917] mt-3">Store Location & Driving Directions</h2>
         <div className="mt-10 flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
           <div className="flex-1 flex flex-col gap-6">
             <ContactRow
@@ -74,6 +74,7 @@ export default function VisitUs() {
           {/* Fake Map Embed */}
           <div className="w-full lg:flex-1 rounded-2xl h-64 sm:h-80 lg:h-[400px] overflow-hidden shrink-0 bg-[#e8e0d4]">
             <iframe 
+              title="Baji Footwear Location Map in Sivagangai"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15729.809187310064!2d78.4727189!3d9.8543152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00ed43d3b664d9%3A0xc3b438b47120df0d!2sSivaganga%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
@@ -93,8 +94,8 @@ export default function VisitUs() {
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
           {[
             { icon: "🗺️", title: "Landmarks", desc: "We are located in central Sivagangai near the main commercial area. Ask locals for Baji Footwear — we're well known in the area." },
-            { icon: "🚗", title: "By Car", desc: "Street parking is available near the store. Approach from the main road and look for our signboard. WhatsApp us for turn-by-turn directions." },
-            { icon: "🚌", title: "By Bus / Auto", desc: "Sivagangai is well connected by bus from surrounding towns. From the main bus stand, take an auto or walk to the central commercial area." },
+            { icon: "🚗", title: "By Car", desc: "Street parking is available near the store. Whether you're driving from Karaikudi, Madurai, or Melur, approach from the main road and look for our signboard. WhatsApp us for turn-by-turn directions." },
+            { icon: "🚌", title: "By Bus / Auto", desc: "Sivagangai is well connected by bus from surrounding towns like Manamadurai. From the main bus stand, take an auto or walk to the central commercial area." },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="bg-white/60 backdrop-blur-md border border-white/50 rounded-2xl shadow-lg shadow-black/5 p-6 shadow-lg shadow-black/5">
               <div className="text-3xl mb-4">{icon}</div>
